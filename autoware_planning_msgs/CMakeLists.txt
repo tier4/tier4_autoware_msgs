@@ -15,6 +15,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Approval.msg"
   "msg/EnableAvoidance.msg"
   "msg/ExpandStopRange.msg"
   "msg/IsAvoidancePossible.msg"
