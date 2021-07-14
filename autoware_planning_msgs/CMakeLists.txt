@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/LaneChangeCommand.msg"
   "msg/LaneChangeStatus.msg"
   "msg/LaneSequence.msg"
+  "msg/LateralOffset.msg"
   "msg/Path.msg"
   "msg/PathChangeModule.msg"
   "msg/PathChangeModuleArray.msg"
