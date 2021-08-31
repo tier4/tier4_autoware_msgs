@@ -1,0 +1,6 @@
+int32 type
+
+int32 NONE = 0
+int32 AVOIDANCE = 1
+int32 LANE_CHANGE = 2
+int32 FORCE_LANE_CHANGE = 3
