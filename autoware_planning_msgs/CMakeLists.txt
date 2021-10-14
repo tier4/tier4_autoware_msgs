@@ -40,6 +40,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Trajectory.msg"
   "msg/TrajectoryPoint.msg"
   "msg/VelocityLimit.msg"
+  "msg/VelocityLimitClearCommand.msg"
   "msg/VelocityLimitConstraints.msg"
   DEPENDENCIES
     geometry_msgs
