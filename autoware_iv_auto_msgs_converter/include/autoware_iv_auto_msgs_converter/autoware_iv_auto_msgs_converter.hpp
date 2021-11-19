@@ -75,6 +75,26 @@ inline auto convert(const autoware_auto_system_msgs::msg::AutowareState & state)
   return iv_state;
 }
 
+inline auto convert(const autoware_system_msgs::msg::AutowareState & state)
+{
+  autoware_auto_system_msgs::msg::AutowareState auto_state;
+  if (state.state == autoware_system_msgs::msg::AutowareState::INITIALIZING_VEHICLE) {
+    auto_state.state = autoware_auto_system_msgs::msg::AutowareState::INITIALIZING;
+  } else if (state.state == autoware_system_msgs::msg::AutowareState::WAITING_FOR_ROUTE) {
+    auto_state.state = autoware_auto_system_msgs::msg::AutowareState::WAITING_FOR_ROUTE;
+  } else if (state.state == autoware_system_msgs::msg::AutowareState::PLANNING) {
+    auto_state.state = autoware_auto_system_msgs::msg::AutowareState::PLANNING;
+  } else if (state.state == autoware_system_msgs::msg::AutowareState::WAITING_FOR_ENGAGE) {
+    auto_state.state = autoware_auto_system_msgs::msg::AutowareState::WAITING_FOR_ENGAGE;
+  } else if (state.state == autoware_system_msgs::msg::AutowareState::DRIVING) {
+    auto_state.state = autoware_auto_system_msgs::msg::AutowareState::DRIVING;
+  } else if (state.state == autoware_system_msgs::msg::AutowareState::ARRIVAL_GOAL) {
+    auto_state.state = autoware_auto_system_msgs::msg::AutowareState::ARRIVED_GOAL;
+  }
+  auto_state.state = autoware_auto_system_msgs::msg::AutowareState::FINALIZING;
+  return auto_state;
+}
+
 inline auto convert(const autoware_auto_system_msgs::msg::HazardStatusStamped & status)
 {
   autoware_system_msgs::msg::HazardStatusStamped iv_status;
