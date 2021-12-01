@@ -282,7 +282,7 @@ inline auto convert(const autoware_auto_perception_msgs::msg::ObjectClassificati
 {
   autoware_perception_msgs::msg::Semantic iv_semantic;
   iv_semantic.confidence = classification.probability;
-  switch(classification.label) {
+  switch (classification.label) {
     case autoware_auto_perception_msgs::msg::ObjectClassification::UNKNOWN:
       iv_semantic.type = autoware_perception_msgs::msg::Semantic::UNKNOWN;
       break;
@@ -333,7 +333,7 @@ inline auto convert(const autoware_auto_perception_msgs::msg::Shape & shape)
   autoware_perception_msgs::msg::Shape iv_shape;
   iv_shape.dimensions = shape.dimensions;
   iv_shape.footprint = shape.footprint;
-  switch(shape.type) {
+  switch (shape.type) {
     case autoware_auto_perception_msgs::msg::Shape::BOUNDING_BOX:
       iv_shape.type = autoware_perception_msgs::msg::Shape::BOUNDING_BOX;
       break;
