@@ -37,6 +37,8 @@
 #include "autoware_vehicle_msgs/msg/shift_stamped.hpp"
 #include "autoware_vehicle_msgs/msg/steering.hpp"
 #include "autoware_vehicle_msgs/msg/turn_signal.hpp"
+#include "autoware_auto_perception_msgs/msg/tracked_objects.hpp"
+#include "autoware_perception_msgs/msg/dynamic_object_array.hpp"
 
 namespace autoware_iv_auto_msgs_converter
 {
@@ -274,6 +276,13 @@ inline auto convert(const autoware_auto_vehicle_msgs::msg::SteeringReport & stee
   iv_steering.header.stamp = steering.stamp;
   iv_steering.data = steering.steering_tire_angle;
   return iv_steering;
+}
+
+inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObjects & objects)
+{
+  (void)objects;
+  autoware_perception_msgs::msg::DynamicObjectArray iv_objects;
+  return iv_objects;
 }
 
 }  // namespace autoware_iv_auto_msgs_converter
