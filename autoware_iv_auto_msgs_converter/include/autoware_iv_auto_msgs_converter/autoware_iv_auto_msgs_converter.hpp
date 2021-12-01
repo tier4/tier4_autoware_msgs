@@ -278,10 +278,93 @@ inline auto convert(const autoware_auto_vehicle_msgs::msg::SteeringReport & stee
   return iv_steering;
 }
 
+inline auto convert(const autoware_auto_perception_msgs::msg::ObjectClassification & classification)
+{
+  autoware_perception_msgs::msg::Semantic iv_semantic;
+  iv_semantic.confidence = classification.probability;
+  switch(classification.label) {
+    case autoware_auto_perception_msgs::msg::ObjectClassification::UNKNOWN:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::UNKNOWN;
+      break;
+    case autoware_auto_perception_msgs::msg::ObjectClassification::CAR:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::CAR;
+      break;
+    case autoware_auto_perception_msgs::msg::ObjectClassification::TRUCK:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::TRUCK;
+      break;
+    case autoware_auto_perception_msgs::msg::ObjectClassification::BUS:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::BUS;
+      break;
+    case autoware_auto_perception_msgs::msg::ObjectClassification::TRAILER:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::TRUCK;
+      break;
+    case autoware_auto_perception_msgs::msg::ObjectClassification::MOTORCYCLE:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::MOTORBIKE;
+      break;
+    case autoware_auto_perception_msgs::msg::ObjectClassification::BICYCLE:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::BICYCLE;
+      break;
+    case autoware_auto_perception_msgs::msg::ObjectClassification::PEDESTRIAN:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::PEDESTRIAN;
+      break;
+    default:
+      iv_semantic.type = autoware_perception_msgs::msg::Semantic::UNKNOWN;
+      break;
+  }
+  return iv_semantic;
+}
+
+inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObjectKinematics & kinematics)
+{
+  using Kinematics = autoware_auto_perception_msgs::msg::TrackedObjectKinematics;
+  autoware_perception_msgs::msg::State iv_state;
+  iv_state.pose_covariance = kinematics.pose_with_covariance;
+  iv_state.orientation_reliable = (kinematics.orientation_availability == Kinematics::AVAILABLE);
+  iv_state.twist_covariance = kinematics.twist_with_covariance;
+  iv_state.twist_reliable = true;
+  iv_state.acceleration_covariance = kinematics.acceleration_with_covariance;
+  iv_state.acceleration_reliable = true;
+  iv_state.predicted_paths = {};
+  return iv_state;
+}
+
+inline auto convert(const autoware_auto_perception_msgs::msg::Shape & shape)
+{
+  autoware_perception_msgs::msg::Shape iv_shape;
+  iv_shape.dimensions = shape.dimensions;
+  iv_shape.footprint = shape.footprint;
+  switch(shape.type) {
+    case autoware_auto_perception_msgs::msg::Shape::BOUNDING_BOX:
+      iv_shape.type = autoware_perception_msgs::msg::Shape::BOUNDING_BOX;
+      break;
+    case autoware_auto_perception_msgs::msg::Shape::CYLINDER:
+      iv_shape.type = autoware_perception_msgs::msg::Shape::CYLINDER;
+      break;
+    case autoware_auto_perception_msgs::msg::Shape::POLYGON:
+      iv_shape.type = autoware_perception_msgs::msg::Shape::POLYGON;
+      break;
+  }
+  return iv_shape;
+}
+
+inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObject & object)
+{
+  autoware_perception_msgs::msg::DynamicObject iv_object;
+  iv_object.id = object.object_id;
+  iv_object.semantic = convert(object.classification.front());
+  iv_object.state = convert(object.kinematics);
+  iv_object.shape = convert(object.shape);
+  return iv_object;
+}
+
 inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObjects & objects)
 {
-  (void)objects;
   autoware_perception_msgs::msg::DynamicObjectArray iv_objects;
+  iv_objects.header = objects.header;
+  iv_objects.objects.reserve(objects.objects.size());
+  for (const auto & object : objects.objects) {
+    iv_objects.objects.push_back(convert(object));
+  }
   return iv_objects;
 }
 
