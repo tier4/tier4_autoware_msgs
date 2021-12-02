@@ -80,16 +80,22 @@ inline auto convert(const autoware_system_msgs::msg::AutowareState & state)
   autoware_auto_system_msgs::msg::AutowareState auto_state;
   if (state.state == autoware_system_msgs::msg::AutowareState::INITIALIZING_VEHICLE) {
     auto_state.state = autoware_auto_system_msgs::msg::AutowareState::INITIALIZING;
+    return auto_state;
   } else if (state.state == autoware_system_msgs::msg::AutowareState::WAITING_FOR_ROUTE) {
     auto_state.state = autoware_auto_system_msgs::msg::AutowareState::WAITING_FOR_ROUTE;
+    return auto_state;
   } else if (state.state == autoware_system_msgs::msg::AutowareState::PLANNING) {
     auto_state.state = autoware_auto_system_msgs::msg::AutowareState::PLANNING;
+    return auto_state;
   } else if (state.state == autoware_system_msgs::msg::AutowareState::WAITING_FOR_ENGAGE) {
     auto_state.state = autoware_auto_system_msgs::msg::AutowareState::WAITING_FOR_ENGAGE;
+    return auto_state;
   } else if (state.state == autoware_system_msgs::msg::AutowareState::DRIVING) {
     auto_state.state = autoware_auto_system_msgs::msg::AutowareState::DRIVING;
+    return auto_state;
   } else if (state.state == autoware_system_msgs::msg::AutowareState::ARRIVAL_GOAL) {
     auto_state.state = autoware_auto_system_msgs::msg::AutowareState::ARRIVED_GOAL;
+    return auto_state;
   }
   auto_state.state = autoware_auto_system_msgs::msg::AutowareState::FINALIZING;
   return auto_state;
