@@ -19,6 +19,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/ClassifiedDiagnostics.msg
   msg/ControlCommand.msg
   msg/ControlCommandStamped.msg
+  msg/CpuStatus.msg
+  msg/CpuUsage.msg
   msg/DoorStatus.msg
   msg/Emergency.msg
   msg/EngageStatus.msg
