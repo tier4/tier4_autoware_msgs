@@ -33,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MetadataPackages.msg
   msg/Observer.msg
   msg/Operator.msg
+  msg/RosbagLoggingMode.msg
   msg/ResponseStatus.msg
   msg/Route.msg
   msg/RouteSection.msg
@@ -57,6 +58,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetOperator.srv
   srv/SetEmergency.srv
   srv/SetPose.srv
+  srv/SetRosbagLoggingMode.srv
   srv/SetRoute.srv
   srv/SetService.srv
   srv/SetVelocityLimit.srv
