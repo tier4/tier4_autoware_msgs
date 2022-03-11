@@ -1,0 +1,5 @@
+bool data_request
+---
+uint8[] graph_image
+float32[] accel_map
+float32[] brake_map
