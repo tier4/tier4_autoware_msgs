@@ -15,6 +15,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/CalibrationStatus.msg
   msg/ClassifiedDiagnostics.msg
   msg/ControlCommand.msg
   msg/ControlCommandStamped.msg
@@ -45,6 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/VehicleCommandStamped.msg
   msg/VehicleStatus.msg
   msg/VehicleStatusStamped.msg
+  srv/CalibrationDataRequest.srv
   srv/ClearRoute.srv
   srv/Engage.srv
   srv/GetMetadataPackages.srv
