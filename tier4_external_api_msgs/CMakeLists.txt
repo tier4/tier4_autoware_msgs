@@ -16,7 +16,7 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   msg/CalibrationStatus.msg
-  msg/CalibrationStatusStamped.msg
+  msg/CalibrationStatusArray.msg
   msg/ClassifiedDiagnostics.msg
   msg/ControlCommand.msg
   msg/ControlCommandStamped.msg
