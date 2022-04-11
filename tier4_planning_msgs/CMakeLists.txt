@@ -16,6 +16,9 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Approval.msg"
+  "msg/AvoidanceFactor.msg"
+  "msg/AvoidanceInfo.msg"
+  "msg/AvoidanceInfoArray.msg"
   "msg/EnableAvoidance.msg"
   "msg/ExpandStopRange.msg"
   "msg/IsAvoidancePossible.msg"
@@ -41,6 +44,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     geometry_msgs
     nav_msgs
     std_msgs
+    unique_identifier_msgs
 )
 
 if(BUILD_TESTING)

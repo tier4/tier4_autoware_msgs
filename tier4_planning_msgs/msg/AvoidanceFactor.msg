@@ -1,0 +1,9 @@
+string TOO_NEAR_TO_CENTERLINE=TooNearToCenterLine
+string LINESTRING_NOT_SHARED=LineStringNotShared
+string INSUFFICIENT_LATERAL_MARGIN=InsufficientLateralMargin
+string TOO_NEAR_TO_EGO=TooNearToEgo
+string OBJECT_BEHIND_PATH_GOAL=ObjectBehindPathGoal
+string OBJECT_IS_NOT_TYPE=ObjectIsNotType
+string OBJECT_IS_BEHIND_THRESHOLD=ObjectIsBehindThreshold
+string OBJECT_IS_INFRONT_THRESHOLD=ObjectIsInfrontThreshold
+string reason
