@@ -1,0 +1,30 @@
+# Stop reason list
+uint8 INTERSECTION=1
+uint8 MERGE_FROM_PRIVATE_ROAD=2
+uint8 CROSSWALK=3
+uint8 WALKWAY=4
+uint8 STOP_LINE=5
+uint8 DETECTION_AREA=6
+uint8 NO_STOPPING_AREA=7
+uint8 TRAFFIC_LIGHT=8
+uint8 OBSTACLE_STOP=9
+uint8 SURROUND_OBSTACLE_CHECK=10
+uint8 BLIND_SPOT=11
+uint8 BLOCKED_BY_OBSTACLE=12
+uint8 STOPPING_LANE_CHANGE=13
+uint8 REMOTE_EMERGENCY_STOP=14
+uint8 VIRTUAL_TRAFFIC_LIGHT=15
+uint8 INTERSECTION_COORDINATION=16
+uint8 EVA_BEACON_SYSTEM=17
+uint8 SHUTTER=18
+
+# Status list
+uint8 STOP_FALSE=0
+uint8 STOP_TRUE=1
+
+
+uint8 stop_reason
+uint8 state
+geometry_msgs/Pose stop_line
+float64 dist_to_stop_line
+geometry_msgs/Point[] stop_factor_points
