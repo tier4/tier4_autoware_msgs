@@ -5,5 +5,5 @@ string TOO_NEAR_TO_EGO=TooNearToEgo
 string OBJECT_BEHIND_PATH_GOAL=ObjectBehindPathGoal
 string OBJECT_IS_NOT_TYPE=ObjectIsNotType
 string OBJECT_IS_BEHIND_THRESHOLD=ObjectIsBehindThreshold
-string OBJECT_IS_INFRONT_THRESHOLD=ObjectIsInfrontThreshold
+string OBJECT_IS_IN_FRONT_THRESHOLD=ObjectIsInFrontThreshold
 string reason
