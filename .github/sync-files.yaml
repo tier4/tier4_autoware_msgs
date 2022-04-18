@@ -19,4 +19,3 @@
   files:
     - source: .github/workflows/build-and-test.yaml
     - source: .github/workflows/build-and-test-differential.yaml
-
