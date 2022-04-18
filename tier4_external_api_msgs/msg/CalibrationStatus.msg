@@ -1,4 +1,4 @@
-# calibration target 
+# calibration target
 uint8 ACCEL_BRAKE_MAP=1
 
 # status constants
