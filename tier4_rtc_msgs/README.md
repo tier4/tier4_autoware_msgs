@@ -9,6 +9,7 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
 ### Topic
 
 - `tier4_rtc_msgs/Command`
+
   - Members
     - `type` : Type of command
   - Constants
@@ -16,6 +17,7 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
     - `ACTIVATE` : Activate command
 
 - `tier4_rtc_msgs/Module`
+
   - Members
     - `type` : Type of module
   - Constants
@@ -35,6 +37,7 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
     - `OCCLUSION_SPOT`
 
 - `tier4_rtc_msgs/CooperateStatus`
+
   - Members
     - `stamp` : Time stamp
     - `uuid` : Index of requesting target
