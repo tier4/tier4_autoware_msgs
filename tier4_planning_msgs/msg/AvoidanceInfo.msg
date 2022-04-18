@@ -1,4 +1,4 @@
-unique_identifier_msgs/UUID object_id
+string object_id
 bool allow_avoidance
 float64 lateral_distance_from_centerline
 float64 to_furthest_linestring_distance
