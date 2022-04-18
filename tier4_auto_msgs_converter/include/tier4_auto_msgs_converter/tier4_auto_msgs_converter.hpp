@@ -97,7 +97,7 @@ inline auto convert(const autoware_auto_planning_msgs::msg::Path & path)
   iv_path.header = path.header;
   iv_path.drivable_area = path.drivable_area;
   iv_path.points.reserve(path.points.size());
-  for (const auto point : path.points) {
+  for (const auto & point : path.points) {
     tier4_planning_msgs::msg::PathPoint iv_point;
     iv_point.pose = point.pose;
     iv_point.twist.linear.x = point.longitudinal_velocity_mps;
@@ -114,7 +114,7 @@ inline auto convert(const autoware_auto_planning_msgs::msg::Trajectory & traj)
   tier4_planning_msgs::msg::Trajectory iv_traj;
   iv_traj.header = traj.header;
   iv_traj.points.reserve(traj.points.size());
-  for (const auto point : traj.points) {
+  for (const auto & point : traj.points) {
     tier4_planning_msgs::msg::TrajectoryPoint iv_point;
     iv_point.pose = point.pose;
     iv_point.accel.linear.x = point.acceleration_mps2;
