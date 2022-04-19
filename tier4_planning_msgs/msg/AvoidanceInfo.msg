@@ -1,6 +1,7 @@
 string object_id
 bool allow_avoidance
+float64 longitudinal_distance
 float64 lateral_distance_from_centerline
 float64 to_furthest_linestring_distance
 
-string[] avoidance_factors
+string avoidance_factor
