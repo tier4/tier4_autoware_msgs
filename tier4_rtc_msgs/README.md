@@ -16,6 +16,20 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
     - `DEACTIVATE` : Deactivate command
     - `ACTIVATE` : Activate command
 
+- `tier4_rtc_msgs/CooperateCommand`
+
+  - Members
+    - `uuid` : Index of requesting target
+    - `module` : Module type of requesting target
+    - `command` : Command
+
+- `tier4_rtc_msgs/CooperateResponse`
+
+  - Members
+    - `uuid` : Index of requesting target
+    - `module` : Module type of requesting target
+    - `success` : Cooperate Command result
+
 - `tier4_rtc_msgs/Module`
 
   - Members
@@ -52,10 +66,9 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
 
 ### Service
 
-- `tier4_rtc_msgs/CooperateCommand`
+- `tier4_rtc_msgs/CooperateCommands`
   - Members (Request)
-    - `uuid` : Index of requesting target
-    - `module` : Module type of requesting target
-    - `command` : Command
+    - `stamp` : Time stamp
+    - `commands` : Array of cooperate command
   - Members (Response)
-    - `success` : Receiving result
+    - `responses` : Array of cooperate response
