@@ -16,10 +16,12 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Command.msg"
+  "msg/CooperateCommand.msg"
+  "msg/CooperateResponse.msg"
   "msg/CooperateStatus.msg"
   "msg/CooperateStatusArray.msg"
   "msg/Module.msg"
-  "srv/CooperateCommand.srv"
+  "srv/CooperateCommands.srv"
   DEPENDENCIES
     builtin_interfaces
     unique_identifier_msgs
