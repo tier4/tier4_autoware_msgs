@@ -67,6 +67,7 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
 ### Service
 
 - `tier4_rtc_msgs/CooperateCommand`
+
   - Members (Request)
     - `uuid` : Index of requesting target
     - `module` : Module type of requesting target
@@ -77,6 +78,6 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
 - `tier4_rtc_msgs/CooperateCommands`
   - Members (Request)
     - `stamp` : Time stamp
-    - `commands` : Array of cooperate command 
+    - `commands` : Array of cooperate command
   - Members (Response)
     - `responses` : Array of cooperate response
