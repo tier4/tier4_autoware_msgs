@@ -5,5 +5,5 @@ string OBJECT_BEHIND_PATH_GOAL=ObjectBehindPathGoal
 string TOO_NEAR_TO_CENTERLINE=TooNearToCenterLine
 string INSUFFICIENT_LATERAL_MARGIN=InsufficientLateralMargin
 string REMAINING_DISTANCE_LESS_THAN_ZERO=RemainingDistanceLessThanZero
-string JERK_TOO_LARGE=JerkTooLarge
+string TOO_LARGE_JERK=TooLargeJerk
 string reason
