@@ -16,9 +16,9 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Approval.msg"
-  "msg/AvoidanceFactor.msg"
-  "msg/AvoidanceInfo.msg"
-  "msg/AvoidanceInfoArray.msg"
+  "msg/AvoidanceDebugFactor.msg"
+  "msg/AvoidanceDebugMsg.msg"
+  "msg/AvoidanceDebugMsgArray.msg"
   "msg/EnableAvoidance.msg"
   "msg/ExpandStopRange.msg"
   "msg/IsAvoidancePossible.msg"

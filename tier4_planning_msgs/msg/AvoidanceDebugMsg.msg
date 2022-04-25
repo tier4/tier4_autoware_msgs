@@ -6,4 +6,4 @@ float64 to_furthest_linestring_distance
 float64 max_shift_length
 float64 required_jerk
 float64 maximum_jerk
-string avoidance_factor
+string failed_reason
