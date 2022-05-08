@@ -1,0 +1,7 @@
+bool allow_lane_change
+bool is_approved
+bool found_current_lane
+bool found_lane_change_lanes
+bool found_lane_change_paths
+bool found_valid_path
+bool found_safe_path
