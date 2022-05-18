@@ -23,8 +23,8 @@ uint8 STOP_FALSE=0
 uint8 STOP_TRUE=1
 
 
-uint8 stop_reason
+uint8 reason
 uint8 state
-geometry_msgs/Pose stop_line
-float64 dist_to_stop_line
+geometry_msgs/Pose stop_pose
+float64 dist_to_stop_pose
 geometry_msgs/Point[] stop_factor_points

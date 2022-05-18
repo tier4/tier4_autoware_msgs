@@ -6,6 +6,7 @@ bool emergency_stopped
 float32 current_max_velocity
 tier4_system_msgs/HazardStatusStamped hazard_status
 tier4_planning_msgs/StopReasonArray stop_reason
+tier4_planning_msgs/MotionFactorArray motion_factor
 diagnostic_msgs/DiagnosticStatus[] diagnostics
 diagnostic_msgs/DiagnosticStatus[] error_diagnostics
 bool autonomous_overridden
