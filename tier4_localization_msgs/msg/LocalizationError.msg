@@ -1,3 +1,1 @@
-builtin_interfaces/Time stamp
-tier4_localization_msgs/EkfError ekf_error
-tier4_localization_msgs/LocalizationScore[] scores
+float64[36] pose_covariance
