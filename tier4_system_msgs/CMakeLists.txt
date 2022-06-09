@@ -20,6 +20,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/EmergencyStateStamped.msg"
   "msg/HazardStatus.msg"
   "msg/HazardStatusStamped.msg"
+  "msg/OperationMode.msg"
+  "srv/OperationModeRequest.srv"
   DEPENDENCIES
     diagnostic_msgs
     std_msgs
