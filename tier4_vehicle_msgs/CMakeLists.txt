@@ -21,7 +21,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Shift.msg"
   "msg/ShiftStamped.msg"
   "msg/ControlMode.msg"
-  "msg/IsAutonomousAvailable.msg"
   "msg/TurnSignal.msg"
   "msg/Steering.msg"
   "msg/SteeringWheelStatusStamped.msg"
