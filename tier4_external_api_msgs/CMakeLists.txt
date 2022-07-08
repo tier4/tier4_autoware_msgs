@@ -30,6 +30,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/GearShift.msg
   msg/GearShiftStamped.msg
   msg/Heartbeat.msg
+  msg/LocalizationScore.msg
+  msg/LocalizationScoreArray.msg
   msg/MapHash.msg
   msg/MetadataPackages.msg
   msg/Observer.msg
