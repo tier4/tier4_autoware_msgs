@@ -1,3 +1,0 @@
-builtin_interfaces/Time stamp
-tier4_localization_msgs/LocalizationError error
-tier4_localization_msgs/LocalizationScore[] scores
