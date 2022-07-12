@@ -13,6 +13,7 @@ string BLOCKED_BY_OBSTACLE=BlockedByObstacle
 string STOPPING_LANE_CHANGE=StoppingLaneChange
 string REMOTE_EMERGENCY_STOP=RemoteEmergencyStop
 string VIRTUAL_TRAFFIC_LIGHT=VirtualTrafficLight
+string OCCLUSION_SPOT_SLOWDOWN=OcclusionSpotSlowDown
 string reason
 
 tier4_planning_msgs/StopFactor[] stop_factors
