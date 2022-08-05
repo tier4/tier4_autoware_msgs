@@ -1,2 +1,2 @@
 builtin_interfaces/Time stamp
-bool is_autonomous_available
+bool available
