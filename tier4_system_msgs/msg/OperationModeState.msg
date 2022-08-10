@@ -1,3 +1,0 @@
-builtin_interfaces/Time stamp
-autoware_ad_api_msgs/OperationMode operation
-bool is_in_transition
