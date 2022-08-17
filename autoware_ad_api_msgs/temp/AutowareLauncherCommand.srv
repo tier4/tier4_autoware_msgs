@@ -1,0 +1,6 @@
+uint32 LAUNCH = 1
+uint32 TERMINATE = 2
+
+uint32 command
+---
+autoware_ad_api_msgs/ResponseStatus status
