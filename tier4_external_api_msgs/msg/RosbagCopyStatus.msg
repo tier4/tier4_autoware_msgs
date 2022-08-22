@@ -1,9 +1,9 @@
 # constants
-uint8 NONE = 0 # 状態不明
-uint8 NOT_COPIED = 1 # コピー未実施
-uint8 IN_PROGRESS = 2 # コピー中
-uint8 SUCCESS = 3 # コピー完了
-uint8 FAILED = 4 # コピー失敗
+uint8 NONE=0
+uint8 NOT_COPIED=1
+uint8 IN_PROGRESS=2
+uint8 SUCCESS=3
+uint8 FAILED=4
 
 # fields
 uint8 status
