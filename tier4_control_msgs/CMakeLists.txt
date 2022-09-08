@@ -18,7 +18,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GateMode.msg"
   "msg/ExternalCommandSelectorMode.msg"
   "srv/ExternalCommandSelect.srv"
+  "srv/SetPause.srv"
+  "msg/IsPaused.msg"
+  "msg/WillMove.msg"
   DEPENDENCIES
+    autoware_ad_api_msgs
     std_msgs
 )
 
