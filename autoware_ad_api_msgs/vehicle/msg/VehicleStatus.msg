@@ -1,0 +1,8 @@
+builtin_interfaces/Time stamp
+geometry_msgs/Twist position
+geometry_msgs/Twist velocity
+geometry_msgs/Twist acceleration
+autoware_ad_api_msgs/TurnIndicators turn_indicators
+autoware_ad_api_msgs/HazardLights hazard_lights
+autoware_ad_api_msgs/Gear gear
+autoware_ad_api_msgs/Energy energy
