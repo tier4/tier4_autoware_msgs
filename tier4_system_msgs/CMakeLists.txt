@@ -24,7 +24,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
   DEPENDENCIES
-    autoware_ad_api_msgs
+    autoware_common_msgs
     diagnostic_msgs
     std_msgs
 )

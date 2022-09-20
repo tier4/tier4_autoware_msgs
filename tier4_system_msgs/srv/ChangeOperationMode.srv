@@ -1,3 +1,3 @@
-autoware_ad_api_msgs/OperationMode operation
+autoware_common_msgs/OperationMode operation
 ---
-autoware_ad_api_msgs/ResponseStatus status
+autoware_common_msgs/ResponseStatus status
