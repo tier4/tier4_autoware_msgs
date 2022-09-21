@@ -18,7 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GateMode.msg"
   "msg/ExternalCommandSelectorMode.msg"
   "srv/ExternalCommandSelect.srv"
-  "msg/IsDepartureRequested.msg"
+  "msg/IsStartRequested.msg"
   "msg/IsPaused.msg"
   "srv/SetPause.srv"
   DEPENDENCIES
