@@ -36,6 +36,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MetadataPackages.msg
   msg/Observer.msg
   msg/Operator.msg
+  msg/RosbagCopyStatus.msg
   msg/RosbagLoggingMode.msg
   msg/ResponseStatus.msg
   msg/Route.msg
@@ -53,6 +54,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/ClearRoute.srv
   srv/Engage.srv
   srv/GetMetadataPackages.srv
+  srv/GetRosbagCopyList.srv
   srv/GetTextFile.srv
   srv/InitializePose.srv
   srv/InitializePoseAuto.srv
@@ -66,6 +68,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetRoute.srv
   srv/SetService.srv
   srv/SetVelocityLimit.srv
+  srv/StartRosbagCopy.srv
   DEPENDENCIES
     builtin_interfaces
     diagnostic_msgs
