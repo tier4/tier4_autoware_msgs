@@ -6,4 +6,4 @@ uint8 CLIENT_RESPONSE = 4
 builtin_interface/Time stamp
 uint8 type
 string node
-string yamlQ
+string yaml
