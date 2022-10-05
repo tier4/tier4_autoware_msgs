@@ -9,5 +9,4 @@ builtin_interfaces/Time stamp
 uint8 type
 string name
 string node
-string guid
 string yaml
