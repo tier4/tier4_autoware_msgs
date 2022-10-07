@@ -21,6 +21,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HazardStatus.msg"
   "msg/HazardStatusStamped.msg"
   "msg/IsAutonomousAvailable.msg"
+  "msg/OperationMode.msg"
+  "srv/OperationModeRequest.srv"
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
   DEPENDENCIES
