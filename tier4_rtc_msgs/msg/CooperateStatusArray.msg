@@ -1,2 +1,3 @@
 builtin_interfaces/Time stamp
 tier4_rtc_msgs/CooperateStatus[] statuses
+tier4_rtc_msgs/AutoModeStatuses[] auto_mode_statuses
