@@ -1,3 +1,8 @@
 builtin_interfaces/Time stamp
-bool is_available
-bool is_operating
+
+# For state
+uint8 NOT_AVAILABLE = 0
+uint8 AVAILABLE = 1
+uint8 OPERATING = 2
+
+uint8 state
