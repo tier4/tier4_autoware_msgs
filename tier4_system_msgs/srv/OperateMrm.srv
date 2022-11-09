@@ -1,0 +1,4 @@
+builtin_interfaces/Time stamp
+bool operate
+---
+autoware_adapi_v1_msgs/ResponseStatus response

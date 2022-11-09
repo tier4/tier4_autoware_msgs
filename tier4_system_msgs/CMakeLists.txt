@@ -26,7 +26,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MrmBehaviorStatus.msg"
   "msg/OperationMode.msg"
   "srv/OperationModeRequest.srv"
+  "srv/OperateMrm.srv"
   DEPENDENCIES
+    autoware_adapi_v1_msgs
+    builtin_interfaces
     diagnostic_msgs
     std_msgs
 )
