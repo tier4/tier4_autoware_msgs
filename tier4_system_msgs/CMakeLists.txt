@@ -22,11 +22,12 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HazardStatusStamped.msg"
   "msg/ServiceLog.msg"
   "msg/ModeChangeAvailable.msg"
-  "msg/IsAutonomousAvailable.msg"
   "msg/MrmBehaviorStatus.msg"
   "msg/OperationMode.msg"
   "srv/OperationModeRequest.srv"
   "srv/OperateMrm.srv"
+  "srv/ChangeOperationMode.srv"
+  "srv/ChangeAutowareControl.srv"
   DEPENDENCIES
     autoware_common_msgs
     builtin_interfaces
