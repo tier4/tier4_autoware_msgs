@@ -94,7 +94,6 @@ inline auto convert(const autoware_auto_planning_msgs::msg::Path & path)
 {
   tier4_planning_msgs::msg::Path iv_path;
   iv_path.header = path.header;
-  iv_path.drivable_area = path.drivable_area;
   iv_path.points.reserve(path.points.size());
   for (const auto & point : path.points) {
     tier4_planning_msgs::msg::PathPoint iv_point;
