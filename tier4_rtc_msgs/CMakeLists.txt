@@ -22,6 +22,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CooperateStatusArray.msg"
   "msg/Module.msg"
   "srv/AutoMode.srv"
+  "srv/AutoModeWithModule.srv"
   "srv/CooperateCommands.srv"
   DEPENDENCIES
     builtin_interfaces
