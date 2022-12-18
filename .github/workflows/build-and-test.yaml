@@ -18,7 +18,7 @@ jobs:
           - galactic
           - humble
         include:
-          - rosdistro: galactic
+          - rosdistro: galactic --include-eol-distros
             container: ros:galactic
             build-depends-repos: build_depends.repos
           - rosdistro: humble
