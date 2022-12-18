@@ -20,6 +20,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CooperateResponse.msg"
   "msg/CooperateStatus.msg"
   "msg/CooperateStatusArray.msg"
+  "msg/AutoModeStatus.msg"
+  "msg/AutoModeStatusArray.msg"
   "msg/Module.msg"
   "srv/AutoMode.srv"
   "srv/CooperateCommands.srv"
