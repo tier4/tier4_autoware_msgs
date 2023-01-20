@@ -1,0 +1,5 @@
+tier4_v2x_msgs/GateLockTarget target
+float32 priority
+---
+autoware_common_msgs/ResponseStatus status
+bool acquired

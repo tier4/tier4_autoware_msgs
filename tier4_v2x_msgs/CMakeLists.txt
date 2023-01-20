@@ -20,7 +20,15 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/KeyValue.msg"
   "msg/VirtualTrafficLightState.msg"
   "msg/VirtualTrafficLightStateArray.msg"
+  "msg/GateLockTarget.msg"
+  "msg/GateLockClientStatus.msg"
+  "msg/GateLockClientStatusArray.msg"
+  "msg/GateLockServerStatus.msg"
+  "msg/GateLockServerStatusArray.msg"
+  "srv/AcquireGateLock.srv"
+  "srv/ReleaseGateLock.srv"
   DEPENDENCIES
+    autoware_common_msgs
     std_msgs
 )
 

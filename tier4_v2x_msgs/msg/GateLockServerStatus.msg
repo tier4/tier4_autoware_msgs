@@ -1,0 +1,2 @@
+tier4_v2x_msgs/GateLockTarget target
+bool cancel

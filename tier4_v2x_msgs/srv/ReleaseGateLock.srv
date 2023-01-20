@@ -1,0 +1,4 @@
+tier4_v2x_msgs/GateLockTarget target
+---
+autoware_common_msgs/ResponseStatus status
+bool released
