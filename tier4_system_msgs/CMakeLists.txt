@@ -23,6 +23,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ServiceLog.msg"
   "msg/ModeChangeAvailable.msg"
   "msg/MrmBehaviorStatus.msg"
+  "msg/MessageTrackingTag.msg"
+  "msg/timing_violation_monitor/TildeTimingMonitorCbLatency.msg"
+  "msg/timing_violation_monitor/TildeTimingMonitorCommand.msg"
+  "msg/timing_violation_monitor/TildeTimingMonitorDeadlineMiss.msg"
+  "msg/timing_violation_monitor/TildeTimingMonitorInfos.msg"
+  "msg/timing_violation_monitor/TildeTimingMonitorPathInfos.msg"
+
   "srv/OperateMrm.srv"
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
