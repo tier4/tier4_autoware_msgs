@@ -20,7 +20,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/SimulationEvents.msg
   msg/UserDefinedValue.msg
   msg/UserDefinedValueType.msg
-  DEPENDENCIES 
+  DEPENDENCIES
     builtin_interfaces
 )
 

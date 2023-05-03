@@ -25,7 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SteeringWheelStatusStamped.msg"
   "msg/VehicleEmergencyStamped.msg"
   "srv/UpdateAccelBrakeMap.srv"
-  DEPENDENCIES 
+  DEPENDENCIES
     std_msgs
 )
 
