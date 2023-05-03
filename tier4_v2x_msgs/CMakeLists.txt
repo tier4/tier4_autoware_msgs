@@ -21,7 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VirtualTrafficLightState.msg"
   "msg/VirtualTrafficLightStateArray.msg"
   DEPENDENCIES
-    std_msgs
+    builtin_interfaces
 )
 
 if(BUILD_TESTING)

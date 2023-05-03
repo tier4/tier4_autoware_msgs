@@ -20,7 +20,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/SimulationEvents.msg
   msg/UserDefinedValue.msg
   msg/UserDefinedValueType.msg
-  DEPENDENCIES builtin_interfaces std_msgs)
+  DEPENDENCIES 
+    builtin_interfaces
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

@@ -46,7 +46,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     geometry_msgs
     nav_msgs
     std_msgs
-    unique_identifier_msgs
 )
 
 if(BUILD_TESTING)
