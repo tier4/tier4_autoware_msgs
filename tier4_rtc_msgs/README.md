@@ -49,7 +49,6 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
     - `DETECTION_AREA`
     - `NO_STOPPING_AREA`
     - `OCCLUSION_SPOT`
-    - `NO_DRIVABLE_LANE`
 
 - `tier4_rtc_msgs/CooperateStatus`
 
