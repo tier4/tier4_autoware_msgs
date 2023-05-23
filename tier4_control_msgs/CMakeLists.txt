@@ -21,6 +21,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/IsStartRequested.msg"
   "msg/IsPaused.msg"
   "srv/SetPause.srv"
+  "msg/IsStopped.msg"
+  "srv/SetStop.srv"
   DEPENDENCIES
     autoware_common_msgs
     std_msgs
