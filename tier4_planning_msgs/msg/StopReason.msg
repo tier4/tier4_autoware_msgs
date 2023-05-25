@@ -15,6 +15,12 @@ string REMOTE_EMERGENCY_STOP=RemoteEmergencyStop
 string VIRTUAL_TRAFFIC_LIGHT=VirtualTrafficLight
 string OUT_OF_LANE=OutOfLane
 string NO_DRIVABLE_LANE=NoDrivableLane
+string AVOIDANCE=Avoidance
+string AVOIDANCE_BY_LANE_CHANGE=AvoidanceByLaneChange
+string EXTERNAL_LANE_CHANGE=ExternalLaneChange
+string LANE_CHANGE=LaneChange
+string GOAL_PLANNER=GoalPlanner
+string PULL_OUT=PullOut
 string reason
 
 tier4_planning_msgs/StopFactor[] stop_factors
