@@ -1,0 +1,1 @@
+diagnostic_msgs/DiagnosticStatus[] status
