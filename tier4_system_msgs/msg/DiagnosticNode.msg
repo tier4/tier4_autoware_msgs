@@ -1,1 +1,1 @@
-diagnostic_msgs/DiagnosticStatus[] status
+diagnostic_msgs/DiagnosticStatus status
