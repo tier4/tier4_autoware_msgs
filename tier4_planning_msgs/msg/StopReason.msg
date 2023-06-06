@@ -20,7 +20,7 @@ string AVOIDANCE_BY_LANE_CHANGE=AvoidanceByLaneChange
 string EXTERNAL_LANE_CHANGE=ExternalLaneChange
 string LANE_CHANGE=LaneChange
 string GOAL_PLANNER=GoalPlanner
-string PULL_OUT=PullOut
+string START_PLANNER=StartPlanner
 string reason
 
 tier4_planning_msgs/StopFactor[] stop_factors
