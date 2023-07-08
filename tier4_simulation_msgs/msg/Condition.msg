@@ -1,0 +1,3 @@
+string current_evaluation
+string current_value
+string type
