@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/Condition.msg
   msg/ConditionGroup.msg
   msg/ConditionGroups.msg
+  msg/ConditionGroupsCollection.msg
   msg/Context.msg
   msg/FaultInjectionEvent.msg
   msg/SimulationEvents.msg

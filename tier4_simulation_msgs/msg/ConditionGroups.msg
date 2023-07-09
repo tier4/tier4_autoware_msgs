@@ -1,1 +1,2 @@
+string groups_name
 ConditionGroup[] condition_groups
