@@ -24,6 +24,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/object_recognition/Semantic.msg"
   "msg/object_recognition/Shape.msg"
   "msg/object_recognition/State.msg"
+  "msg/traffic_light/TrafficLightElement.msg"
+  "msg/traffic_light/TrafficLightRoi.msg"
+  "msg/traffic_light/TrafficLightRoiArray.msg"
+  "msg/traffic_light/TrafficSignal.msg"
+  "msg/traffic_light/TrafficSignalArray.msg"
   DEPENDENCIES
     autoware_auto_perception_msgs
     builtin_interfaces
