@@ -18,6 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AutowareState.msg"
   "msg/DiagnosticGraph.msg"
   "msg/DiagnosticNode.msg"
+  "msg/DiagnosticSummary.msg"
   "msg/EmergencyState.msg"
   "msg/EmergencyStateStamped.msg"
   "msg/HazardStatus.msg"
