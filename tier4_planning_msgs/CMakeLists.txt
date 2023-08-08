@@ -32,6 +32,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/PathChangeModuleArray.msg"
   "msg/PathChangeModuleId.msg"
   "msg/PathPoint.msg"
+  "msg/RerouteAvailability.msg"
   "msg/Scenario.msg"
   "msg/StopFactor.msg"
   "msg/StopReason.msg"
