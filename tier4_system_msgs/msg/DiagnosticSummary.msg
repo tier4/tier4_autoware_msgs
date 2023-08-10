@@ -1,4 +1,5 @@
 # Each indicates a level of diagnostic_msgs/msg/DiagnosticStatus.
+builtin_interfaces/Time stamp
 byte stop
 byte autonomous
 byte local
