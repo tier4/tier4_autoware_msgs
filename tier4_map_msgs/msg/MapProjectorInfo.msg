@@ -1,5 +1,6 @@
 # define map_projector_type
-# UTM, MGRS, local
+# MGRS, LocalCartesianUTM, local, etc
+# Also refer to https://github.com/autowarefoundation/autoware.universe/tree/main/map/map_projection_loader/README.md
 string type
 
 # Used for MGRS map
