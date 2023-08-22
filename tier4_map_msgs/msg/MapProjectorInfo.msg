@@ -6,5 +6,5 @@ string type
 # Used for MGRS map
 string mgrs_grid
 
-# Used for UTM map
+# Used for some map projection types
 geographic_msgs/GeoPoint map_origin
