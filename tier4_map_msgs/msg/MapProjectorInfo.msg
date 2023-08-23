@@ -1,6 +1,6 @@
 # define map_projector_type
 # UTM, MGRS, local
-string type
+string projector_type
 
 # Used for MGRS map
 string mgrs_grid
