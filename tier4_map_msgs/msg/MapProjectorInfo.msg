@@ -1,12 +1,14 @@
-# define map_projector_type
-# MGRS, local, etc
+# Projector type
 # Also refer to https://github.com/autowarefoundation/autoware.universe/tree/main/map/map_projection_loader/README.md
+string LOCAL = "local"
+string LOCAL_CARTESIAN_UTM = "LocalCartesianUTM"
+string MGRS = "MGRS"
 string projector_type
 
-# Height system
-# WGS84, EGM96, EGM2008, etc
-# If WGS84 is selected, the system will assume that the altitude is in ellipsoid height
-# If anything else is selected, the system will assume that the altitude is in geoid height
+# Vertical datum
+# Also refer to https://github.com/autowarefoundation/autoware.universe/tree/main/map/map_projection_loader/README.md
+string WGS84 = "WGS84"
+string EGM2008 = "EGM2008"
 string vertical_datum
 
 # Used for MGRS map
