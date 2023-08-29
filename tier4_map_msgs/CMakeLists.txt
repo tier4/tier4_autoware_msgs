@@ -6,8 +6,6 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MapProjectorInfo.msg
-  msg/MapProjectorType.msg
-  msg/VerticalDatum.msg
   DEPENDENCIES
     geographic_msgs
 )
