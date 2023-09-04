@@ -3,6 +3,7 @@
 string LOCAL = "local"
 string LOCAL_CARTESIAN_UTM = "LocalCartesianUTM"
 string MGRS = "MGRS"
+string TRANSVERSE_MERCATOR = "TransverseMercator"
 string projector_type
 
 # Vertical datum
