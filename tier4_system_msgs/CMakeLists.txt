@@ -20,6 +20,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DiagnosticLink.msg"
   "msg/DiagnosticNode.msg"
   "msg/OperationModeAvailability.msg"
+  "msg/EmergencyGoalsClearCommand.msg"
   "msg/EmergencyState.msg"
   "msg/EmergencyStateStamped.msg"
   "msg/HazardStatus.msg"
