@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DiagnosticNode.msg"
   "msg/OperationModeAvailability.msg"
   "msg/EmergencyGoalsClearCommand.msg"
+  "msg/EmergencyGoalsStamped.msg"
   "msg/EmergencyState.msg"
   "msg/EmergencyStateStamped.msg"
   "msg/HazardStatus.msg"
@@ -36,6 +37,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     autoware_common_msgs
     builtin_interfaces
     diagnostic_msgs
+    geometry_msgs
     std_msgs
 )
 
