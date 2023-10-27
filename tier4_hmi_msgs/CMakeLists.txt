@@ -16,6 +16,7 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   srv/Announce.srv
+  srv/SetVolume.srv
   DEPENDENCIES
     builtin_interfaces
     tier4_external_api_msgs
