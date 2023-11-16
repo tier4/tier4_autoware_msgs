@@ -1,0 +1,7 @@
+string object_id
+string unsafe_reason
+bool is_safe
+bool is_front
+geometry_msgs/Pose object_pose
+geometry_msgs/Polygon extended_ego_polygon
+geometry_msgs/Polygon extended_obj_polygon
