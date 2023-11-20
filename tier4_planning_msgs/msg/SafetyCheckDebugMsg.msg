@@ -1,7 +1,8 @@
-string object_id
+unique_identifier_msgs/UUID object_uuid
 string unsafe_reason
 bool is_safe
 bool is_front
+bool after_apprroval
 geometry_msgs/Pose object_pose
 geometry_msgs/Polygon extended_ego_polygon
 geometry_msgs/Polygon extended_obj_polygon
