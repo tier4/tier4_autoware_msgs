@@ -1,4 +1,3 @@
-
 uint8 CAR_TL=0
 uint8 PEDESTRIAN_TL=1
 
