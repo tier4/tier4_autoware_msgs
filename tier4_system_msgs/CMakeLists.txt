@@ -16,14 +16,23 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AutowareState.msg"
+  "msg/DiagnosticGraph.msg"
+  "msg/DiagnosticLink.msg"
+  "msg/DiagnosticNode.msg"
+  "msg/OperationModeAvailability.msg"
   "msg/EmergencyState.msg"
   "msg/EmergencyStateStamped.msg"
   "msg/HazardStatus.msg"
   "msg/HazardStatusStamped.msg"
-  "msg/IsAutonomousAvailable.msg"
-  "msg/OperationMode.msg"
-  "srv/OperationModeRequest.srv"
+  "msg/ServiceLog.msg"
+  "msg/ModeChangeAvailable.msg"
+  "msg/MrmBehaviorStatus.msg"
+  "srv/OperateMrm.srv"
+  "srv/ChangeOperationMode.srv"
+  "srv/ChangeAutowareControl.srv"
   DEPENDENCIES
+    autoware_common_msgs
+    builtin_interfaces
     diagnostic_msgs
     std_msgs
 )

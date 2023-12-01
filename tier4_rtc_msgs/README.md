@@ -40,8 +40,8 @@ The `tier4_rtc_msgs` package includes message/service definition files for reque
     - `LANE_CHANGE_RIGHT`
     - `AVOIDANCE_LEFT`
     - `AVOIDANCE_RIGHT`
-    - `PULL_OVER`
-    - `PULL_OUT`
+    - `GOAL_PLANNER`
+    - `START_PLANNER`
     - `TRAFFIC_LIGHT`
     - `INTERSECTION`
     - `CROSSWALK`

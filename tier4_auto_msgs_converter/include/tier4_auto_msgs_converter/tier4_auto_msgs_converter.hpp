@@ -35,7 +35,6 @@
 #include "tier4_planning_msgs/msg/trajectory.hpp"
 #include "tier4_system_msgs/msg/autoware_state.hpp"
 #include "tier4_system_msgs/msg/hazard_status_stamped.hpp"
-#include "tier4_vehicle_msgs/msg/control_mode.hpp"
 #include "tier4_vehicle_msgs/msg/shift_stamped.hpp"
 #include "tier4_vehicle_msgs/msg/steering.hpp"
 #include "tier4_vehicle_msgs/msg/turn_signal.hpp"
@@ -95,7 +94,6 @@ inline auto convert(const autoware_auto_planning_msgs::msg::Path & path)
 {
   tier4_planning_msgs::msg::Path iv_path;
   iv_path.header = path.header;
-  iv_path.drivable_area = path.drivable_area;
   iv_path.points.reserve(path.points.size());
   for (const auto & point : path.points) {
     tier4_planning_msgs::msg::PathPoint iv_point;
@@ -124,24 +122,6 @@ inline auto convert(const autoware_auto_planning_msgs::msg::Trajectory & traj)
     iv_traj.points.push_back(iv_point);
   }
   return iv_traj;
-}
-
-inline auto convert(const autoware_auto_vehicle_msgs::msg::ControlModeReport & mode)
-{
-  tier4_vehicle_msgs::msg::ControlMode iv_mode;
-  iv_mode.header.stamp = mode.stamp;
-  switch (mode.mode) {
-    case autoware_auto_vehicle_msgs::msg::ControlModeReport::MANUAL:
-      iv_mode.data = tier4_vehicle_msgs::msg::ControlMode::MANUAL;
-      break;
-    case autoware_auto_vehicle_msgs::msg::ControlModeReport::AUTONOMOUS:
-      iv_mode.data = tier4_vehicle_msgs::msg::ControlMode::AUTO;
-      break;
-    default:
-      iv_mode.data = tier4_vehicle_msgs::msg::ControlMode::MANUAL;
-      break;
-  }
-  return iv_mode;
 }
 
 inline auto convert(const autoware_auto_vehicle_msgs::msg::GearReport & gear)
