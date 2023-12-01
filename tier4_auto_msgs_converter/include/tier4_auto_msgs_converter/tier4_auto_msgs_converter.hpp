@@ -18,6 +18,8 @@
 #include "autoware_auto_perception_msgs/msg/tracked_objects.hpp"
 #include "autoware_auto_planning_msgs/msg/path.hpp"
 #include "autoware_auto_planning_msgs/msg/trajectory.hpp"
+#include "autoware_planning_msgs/msg/path.hpp"
+#include "autoware_planning_msgs/msg/trajectory.hpp"
 #include "autoware_auto_system_msgs/msg/autoware_state.hpp"
 #include "autoware_auto_system_msgs/msg/hazard_status_stamped.hpp"
 #include "autoware_auto_vehicle_msgs/msg/control_mode_report.hpp"
@@ -107,7 +109,41 @@ inline auto convert(const autoware_auto_planning_msgs::msg::Path & path)
   return iv_path;
 }
 
+inline auto convert(const autoware_planning_msgs::msg::Path & path)
+{
+  tier4_planning_msgs::msg::Path iv_path;
+  iv_path.header = path.header;
+  iv_path.points.reserve(path.points.size());
+  for (const auto & point : path.points) {
+    tier4_planning_msgs::msg::PathPoint iv_point;
+    iv_point.pose = point.pose;
+    iv_point.twist.linear.x = point.longitudinal_velocity_mps;
+    iv_point.twist.linear.y = point.lateral_velocity_mps;
+    iv_point.twist.angular.z = point.heading_rate_rps;
+    iv_point.type = 0;  // not used
+    iv_path.points.push_back(iv_point);
+  }
+  return iv_path;
+}
+
 inline auto convert(const autoware_auto_planning_msgs::msg::Trajectory & traj)
+{
+  tier4_planning_msgs::msg::Trajectory iv_traj;
+  iv_traj.header = traj.header;
+  iv_traj.points.reserve(traj.points.size());
+  for (const auto & point : traj.points) {
+    tier4_planning_msgs::msg::TrajectoryPoint iv_point;
+    iv_point.pose = point.pose;
+    iv_point.accel.linear.x = point.acceleration_mps2;
+    iv_point.twist.linear.x = point.longitudinal_velocity_mps;
+    iv_point.twist.linear.y = point.lateral_velocity_mps;
+    iv_point.twist.angular.z = point.heading_rate_rps;
+    iv_traj.points.push_back(iv_point);
+  }
+  return iv_traj;
+}
+
+inline auto convert(const autoware_planning_msgs::msg::Trajectory & traj)
 {
   tier4_planning_msgs::msg::Trajectory iv_traj;
   iv_traj.header = traj.header;
