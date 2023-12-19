@@ -20,8 +20,8 @@
 #include "autoware_auto_planning_msgs/msg/trajectory.hpp"
 #include "autoware_planning_msgs/msg/path.hpp"
 #include "autoware_planning_msgs/msg/trajectory.hpp"
-#include "autoware_auto_system_msgs/msg/autoware_state.hpp"
-#include "autoware_auto_system_msgs/msg/hazard_status_stamped.hpp"
+#include "autoware_system_msgs/msg/autoware_state.hpp"
+#include "autoware_system_msgs/msg/hazard_status_stamped.hpp"
 #include "autoware_auto_vehicle_msgs/msg/control_mode_report.hpp"
 #include "autoware_auto_vehicle_msgs/msg/gear_command.hpp"
 #include "autoware_auto_vehicle_msgs/msg/gear_report.hpp"
@@ -49,36 +49,36 @@ struct LightSignal
   autoware_auto_vehicle_msgs::msg::HazardLightsCommand hazard_signal;
 };
 
-inline auto convert(const autoware_auto_system_msgs::msg::AutowareState & state)
+inline auto convert(const autoware_system_msgs::msg::AutowareState & state)
 {
   tier4_system_msgs::msg::AutowareState iv_state;
   switch (state.state) {
-    case autoware_auto_system_msgs::msg::AutowareState::INITIALIZING:
+    case autoware_system_msgs::msg::AutowareState::INITIALIZING:
       iv_state.state = tier4_system_msgs::msg::AutowareState::INITIALIZING_VEHICLE;
       break;
-    case autoware_auto_system_msgs::msg::AutowareState::WAITING_FOR_ROUTE:
+    case autoware_system_msgs::msg::AutowareState::WAITING_FOR_ROUTE:
       iv_state.state = tier4_system_msgs::msg::AutowareState::WAITING_FOR_ROUTE;
       break;
-    case autoware_auto_system_msgs::msg::AutowareState::PLANNING:
+    case autoware_system_msgs::msg::AutowareState::PLANNING:
       iv_state.state = tier4_system_msgs::msg::AutowareState::PLANNING;
       break;
-    case autoware_auto_system_msgs::msg::AutowareState::WAITING_FOR_ENGAGE:
+    case autoware_system_msgs::msg::AutowareState::WAITING_FOR_ENGAGE:
       iv_state.state = tier4_system_msgs::msg::AutowareState::WAITING_FOR_ENGAGE;
       break;
-    case autoware_auto_system_msgs::msg::AutowareState::DRIVING:
+    case autoware_system_msgs::msg::AutowareState::DRIVING:
       iv_state.state = tier4_system_msgs::msg::AutowareState::DRIVING;
       break;
-    case autoware_auto_system_msgs::msg::AutowareState::ARRIVED_GOAL:
+    case autoware_system_msgs::msg::AutowareState::ARRIVED_GOAL:
       iv_state.state = tier4_system_msgs::msg::AutowareState::ARRIVAL_GOAL;
       break;
-    case autoware_auto_system_msgs::msg::AutowareState::FINALIZING:
+    case autoware_system_msgs::msg::AutowareState::FINALIZING:
       iv_state.state = tier4_system_msgs::msg::AutowareState::FINALIZING;
       break;
   }
   return iv_state;
 }
 
-inline auto convert(const autoware_auto_system_msgs::msg::HazardStatusStamped & status)
+inline auto convert(const autoware_system_msgs::msg::HazardStatusStamped & status)
 {
   tier4_system_msgs::msg::HazardStatusStamped iv_status;
   iv_status.header.stamp = status.stamp;
