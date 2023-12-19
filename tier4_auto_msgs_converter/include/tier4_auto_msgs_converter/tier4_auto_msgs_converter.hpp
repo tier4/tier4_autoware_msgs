@@ -22,14 +22,14 @@
 #include "autoware_planning_msgs/msg/trajectory.hpp"
 #include "autoware_system_msgs/msg/autoware_state.hpp"
 #include "autoware_system_msgs/msg/hazard_status_stamped.hpp"
-#include "autoware_auto_vehicle_msgs/msg/control_mode_report.hpp"
-#include "autoware_auto_vehicle_msgs/msg/gear_command.hpp"
-#include "autoware_auto_vehicle_msgs/msg/gear_report.hpp"
-#include "autoware_auto_vehicle_msgs/msg/hazard_lights_command.hpp"
-#include "autoware_auto_vehicle_msgs/msg/hazard_lights_report.hpp"
-#include "autoware_auto_vehicle_msgs/msg/steering_report.hpp"
-#include "autoware_auto_vehicle_msgs/msg/turn_indicators_command.hpp"
-#include "autoware_auto_vehicle_msgs/msg/turn_indicators_report.hpp"
+#include "autoware_vehicle_msgs/msg/control_mode_report.hpp"
+#include "autoware_vehicle_msgs/msg/gear_command.hpp"
+#include "autoware_vehicle_msgs/msg/gear_report.hpp"
+#include "autoware_vehicle_msgs/msg/hazard_lights_command.hpp"
+#include "autoware_vehicle_msgs/msg/hazard_lights_report.hpp"
+#include "autoware_vehicle_msgs/msg/steering_report.hpp"
+#include "autoware_vehicle_msgs/msg/turn_indicators_command.hpp"
+#include "autoware_vehicle_msgs/msg/turn_indicators_report.hpp"
 #include "tier4_external_api_msgs/msg/gear_shift_stamped.hpp"
 #include "tier4_external_api_msgs/msg/turn_signal_stamped.hpp"
 #include "tier4_perception_msgs/msg/dynamic_object_array.hpp"
@@ -45,8 +45,8 @@ namespace tier4_auto_msgs_converter
 {
 struct LightSignal
 {
-  autoware_auto_vehicle_msgs::msg::TurnIndicatorsCommand turn_signal;
-  autoware_auto_vehicle_msgs::msg::HazardLightsCommand hazard_signal;
+  autoware_vehicle_msgs::msg::TurnIndicatorsCommand turn_signal;
+  autoware_vehicle_msgs::msg::HazardLightsCommand hazard_signal;
 };
 
 inline auto convert(const autoware_system_msgs::msg::AutowareState & state)
@@ -160,40 +160,40 @@ inline auto convert(const autoware_planning_msgs::msg::Trajectory & traj)
   return iv_traj;
 }
 
-inline auto convert(const autoware_auto_vehicle_msgs::msg::GearReport & gear)
+inline auto convert(const autoware_vehicle_msgs::msg::GearReport & gear)
 {
   tier4_vehicle_msgs::msg::ShiftStamped iv_shift;
   iv_shift.header.stamp = gear.stamp;
   switch (gear.report) {
-    case autoware_auto_vehicle_msgs::msg::GearReport::PARK:
+    case autoware_vehicle_msgs::msg::GearReport::PARK:
       iv_shift.shift.data = tier4_vehicle_msgs::msg::Shift::PARKING;
       break;
-    case autoware_auto_vehicle_msgs::msg::GearReport::REVERSE:
-    case autoware_auto_vehicle_msgs::msg::GearReport::REVERSE_2:
+    case autoware_vehicle_msgs::msg::GearReport::REVERSE:
+    case autoware_vehicle_msgs::msg::GearReport::REVERSE_2:
       iv_shift.shift.data = tier4_vehicle_msgs::msg::Shift::REVERSE;
       break;
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_2:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_3:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_4:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_5:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_6:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_7:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_8:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_9:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_10:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_11:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_12:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_13:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_14:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_15:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_16:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_17:
-    case autoware_auto_vehicle_msgs::msg::GearReport::DRIVE_18:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_2:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_3:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_4:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_5:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_6:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_7:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_8:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_9:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_10:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_11:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_12:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_13:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_14:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_15:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_16:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_17:
+    case autoware_vehicle_msgs::msg::GearReport::DRIVE_18:
       iv_shift.shift.data = tier4_vehicle_msgs::msg::Shift::DRIVE;
       break;
-    case autoware_auto_vehicle_msgs::msg::GearReport::LOW:
-    case autoware_auto_vehicle_msgs::msg::GearReport::LOW_2:
+    case autoware_vehicle_msgs::msg::GearReport::LOW:
+    case autoware_vehicle_msgs::msg::GearReport::LOW_2:
       iv_shift.shift.data = tier4_vehicle_msgs::msg::Shift::LOW;
       break;
     default:
@@ -205,20 +205,20 @@ inline auto convert(const autoware_auto_vehicle_msgs::msg::GearReport & gear)
 
 inline auto convert(const tier4_external_api_msgs::msg::GearShiftStamped & shift)
 {
-  autoware_auto_vehicle_msgs::msg::GearCommand auto_gear;
+  autoware_vehicle_msgs::msg::GearCommand auto_gear;
   auto_gear.stamp = shift.stamp;
   switch (shift.gear_shift.data) {
     case tier4_external_api_msgs::msg::GearShift::PARKING:
-      auto_gear.command = autoware_auto_vehicle_msgs::msg::GearCommand::PARK;
+      auto_gear.command = autoware_vehicle_msgs::msg::GearCommand::PARK;
       break;
     case tier4_external_api_msgs::msg::GearShift::REVERSE:
-      auto_gear.command = autoware_auto_vehicle_msgs::msg::GearCommand::REVERSE;
+      auto_gear.command = autoware_vehicle_msgs::msg::GearCommand::REVERSE;
       break;
     case tier4_external_api_msgs::msg::GearShift::DRIVE:
-      auto_gear.command = autoware_auto_vehicle_msgs::msg::GearCommand::DRIVE;
+      auto_gear.command = autoware_vehicle_msgs::msg::GearCommand::DRIVE;
       break;
     case tier4_external_api_msgs::msg::GearShift::LOW:
-      auto_gear.command = autoware_auto_vehicle_msgs::msg::GearCommand::LOW;
+      auto_gear.command = autoware_vehicle_msgs::msg::GearCommand::LOW;
       break;
     default:
       constexpr int default_val = 0;
@@ -229,12 +229,12 @@ inline auto convert(const tier4_external_api_msgs::msg::GearShiftStamped & shift
 }
 
 inline auto convert(
-  const autoware_auto_vehicle_msgs::msg::TurnIndicatorsReport & turn_indicators,
-  const autoware_auto_vehicle_msgs::msg::HazardLightsReport & hazard_lights)
+  const autoware_vehicle_msgs::msg::TurnIndicatorsReport & turn_indicators,
+  const autoware_vehicle_msgs::msg::HazardLightsReport & hazard_lights)
 {
   tier4_vehicle_msgs::msg::TurnSignal iv_turn_signal;
 
-  if (hazard_lights.report == autoware_auto_vehicle_msgs::msg::HazardLightsReport::ENABLE) {
+  if (hazard_lights.report == autoware_vehicle_msgs::msg::HazardLightsReport::ENABLE) {
     iv_turn_signal.header.stamp = hazard_lights.stamp;
     iv_turn_signal.data = tier4_vehicle_msgs::msg::TurnSignal::HAZARD;
     return iv_turn_signal;
@@ -242,10 +242,10 @@ inline auto convert(
 
   iv_turn_signal.header.stamp = turn_indicators.stamp;
   switch (turn_indicators.report) {
-    case autoware_auto_vehicle_msgs::msg::TurnIndicatorsReport::ENABLE_LEFT:
+    case autoware_vehicle_msgs::msg::TurnIndicatorsReport::ENABLE_LEFT:
       iv_turn_signal.data = tier4_vehicle_msgs::msg::TurnSignal::LEFT;
       break;
-    case autoware_auto_vehicle_msgs::msg::TurnIndicatorsReport::ENABLE_RIGHT:
+    case autoware_vehicle_msgs::msg::TurnIndicatorsReport::ENABLE_RIGHT:
       iv_turn_signal.data = tier4_vehicle_msgs::msg::TurnSignal::RIGHT;
       break;
     default:
@@ -257,27 +257,27 @@ inline auto convert(
 
 inline auto convert(const tier4_external_api_msgs::msg::TurnSignalStamped & in_signal)
 {
-  autoware_auto_vehicle_msgs::msg::HazardLightsCommand hazard;
+  autoware_vehicle_msgs::msg::HazardLightsCommand hazard;
   hazard.stamp = in_signal.stamp;
-  autoware_auto_vehicle_msgs::msg::TurnIndicatorsCommand turn;
+  autoware_vehicle_msgs::msg::TurnIndicatorsCommand turn;
   turn.stamp = in_signal.stamp;
 
   switch (in_signal.turn_signal.data) {
     case tier4_vehicle_msgs::msg::TurnSignal::HAZARD:
-      hazard.command = autoware_auto_vehicle_msgs::msg::HazardLightsCommand::ENABLE;
-      turn.command = autoware_auto_vehicle_msgs::msg::TurnIndicatorsCommand::DISABLE;
+      hazard.command = autoware_vehicle_msgs::msg::HazardLightsCommand::ENABLE;
+      turn.command = autoware_vehicle_msgs::msg::TurnIndicatorsCommand::DISABLE;
       break;
     case tier4_vehicle_msgs::msg::TurnSignal::LEFT:
-      hazard.command = autoware_auto_vehicle_msgs::msg::HazardLightsCommand::DISABLE;
-      turn.command = autoware_auto_vehicle_msgs::msg::TurnIndicatorsCommand::ENABLE_LEFT;
+      hazard.command = autoware_vehicle_msgs::msg::HazardLightsCommand::DISABLE;
+      turn.command = autoware_vehicle_msgs::msg::TurnIndicatorsCommand::ENABLE_LEFT;
       break;
     case tier4_vehicle_msgs::msg::TurnSignal::RIGHT:
-      hazard.command = autoware_auto_vehicle_msgs::msg::HazardLightsCommand::DISABLE;
-      turn.command = autoware_auto_vehicle_msgs::msg::TurnIndicatorsCommand::ENABLE_RIGHT;
+      hazard.command = autoware_vehicle_msgs::msg::HazardLightsCommand::DISABLE;
+      turn.command = autoware_vehicle_msgs::msg::TurnIndicatorsCommand::ENABLE_RIGHT;
       break;
     default:
-      hazard.command = autoware_auto_vehicle_msgs::msg::HazardLightsCommand::DISABLE;
-      turn.command = autoware_auto_vehicle_msgs::msg::TurnIndicatorsCommand::DISABLE;
+      hazard.command = autoware_vehicle_msgs::msg::HazardLightsCommand::DISABLE;
+      turn.command = autoware_vehicle_msgs::msg::TurnIndicatorsCommand::DISABLE;
   }
 
   LightSignal light_signal;
@@ -286,7 +286,7 @@ inline auto convert(const tier4_external_api_msgs::msg::TurnSignalStamped & in_s
   return light_signal;
 }
 
-inline auto convert(const autoware_auto_vehicle_msgs::msg::SteeringReport & steering)
+inline auto convert(const autoware_vehicle_msgs::msg::SteeringReport & steering)
 {
   tier4_vehicle_msgs::msg::Steering iv_steering;
   iv_steering.header.stamp = steering.stamp;
