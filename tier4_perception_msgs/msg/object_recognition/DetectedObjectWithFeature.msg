@@ -1,2 +1,2 @@
-autoware_auto_perception_msgs/DetectedObject object
+autoware_perception_msgs/DetectedObject object
 Feature feature

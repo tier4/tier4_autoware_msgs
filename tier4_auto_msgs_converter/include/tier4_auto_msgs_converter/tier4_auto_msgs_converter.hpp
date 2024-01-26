@@ -15,7 +15,7 @@
 #ifndef TIER4_AUTO_MSGS_CONVERTER__TIER4_AUTO_MSGS_CONVERTER_HPP_
 #define TIER4_AUTO_MSGS_CONVERTER__TIER4_AUTO_MSGS_CONVERTER_HPP_
 
-#include "autoware_auto_perception_msgs/msg/tracked_objects.hpp"
+#include "autoware_perception_msgs/msg/tracked_objects.hpp"
 #include "autoware_auto_planning_msgs/msg/path.hpp"
 #include "autoware_auto_planning_msgs/msg/trajectory.hpp"
 #include "autoware_planning_msgs/msg/path.hpp"
@@ -294,33 +294,33 @@ inline auto convert(const autoware_vehicle_msgs::msg::SteeringReport & steering)
   return iv_steering;
 }
 
-inline auto convert(const autoware_auto_perception_msgs::msg::ObjectClassification & classification)
+inline auto convert(const autoware_perception_msgs::msg::ObjectClassification & classification)
 {
   tier4_perception_msgs::msg::Semantic iv_semantic;
   iv_semantic.confidence = classification.probability;
   switch (classification.label) {
-    case autoware_auto_perception_msgs::msg::ObjectClassification::UNKNOWN:
+    case autoware_perception_msgs::msg::ObjectClassification::UNKNOWN:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::UNKNOWN;
       break;
-    case autoware_auto_perception_msgs::msg::ObjectClassification::CAR:
+    case autoware_perception_msgs::msg::ObjectClassification::CAR:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::CAR;
       break;
-    case autoware_auto_perception_msgs::msg::ObjectClassification::TRUCK:
+    case autoware_perception_msgs::msg::ObjectClassification::TRUCK:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::TRUCK;
       break;
-    case autoware_auto_perception_msgs::msg::ObjectClassification::BUS:
+    case autoware_perception_msgs::msg::ObjectClassification::BUS:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::BUS;
       break;
-    case autoware_auto_perception_msgs::msg::ObjectClassification::TRAILER:
+    case autoware_perception_msgs::msg::ObjectClassification::TRAILER:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::TRUCK;
       break;
-    case autoware_auto_perception_msgs::msg::ObjectClassification::MOTORCYCLE:
+    case autoware_perception_msgs::msg::ObjectClassification::MOTORCYCLE:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::MOTORBIKE;
       break;
-    case autoware_auto_perception_msgs::msg::ObjectClassification::BICYCLE:
+    case autoware_perception_msgs::msg::ObjectClassification::BICYCLE:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::BICYCLE;
       break;
-    case autoware_auto_perception_msgs::msg::ObjectClassification::PEDESTRIAN:
+    case autoware_perception_msgs::msg::ObjectClassification::PEDESTRIAN:
       iv_semantic.type = tier4_perception_msgs::msg::Semantic::PEDESTRIAN;
       break;
     default:
@@ -330,9 +330,9 @@ inline auto convert(const autoware_auto_perception_msgs::msg::ObjectClassificati
   return iv_semantic;
 }
 
-inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObjectKinematics & kinematics)
+inline auto convert(const autoware_perception_msgs::msg::TrackedObjectKinematics & kinematics)
 {
-  using Kinematics = autoware_auto_perception_msgs::msg::TrackedObjectKinematics;
+  using Kinematics = autoware_perception_msgs::msg::TrackedObjectKinematics;
   tier4_perception_msgs::msg::State iv_state;
   iv_state.pose_covariance = kinematics.pose_with_covariance;
   iv_state.orientation_reliable = (kinematics.orientation_availability == Kinematics::AVAILABLE);
@@ -344,26 +344,26 @@ inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObjectKinem
   return iv_state;
 }
 
-inline auto convert(const autoware_auto_perception_msgs::msg::Shape & shape)
+inline auto convert(const autoware_perception_msgs::msg::Shape & shape)
 {
   tier4_perception_msgs::msg::Shape iv_shape;
   iv_shape.dimensions = shape.dimensions;
   iv_shape.footprint = shape.footprint;
   switch (shape.type) {
-    case autoware_auto_perception_msgs::msg::Shape::BOUNDING_BOX:
+    case autoware_perception_msgs::msg::Shape::BOUNDING_BOX:
       iv_shape.type = tier4_perception_msgs::msg::Shape::BOUNDING_BOX;
       break;
-    case autoware_auto_perception_msgs::msg::Shape::CYLINDER:
+    case autoware_perception_msgs::msg::Shape::CYLINDER:
       iv_shape.type = tier4_perception_msgs::msg::Shape::CYLINDER;
       break;
-    case autoware_auto_perception_msgs::msg::Shape::POLYGON:
+    case autoware_perception_msgs::msg::Shape::POLYGON:
       iv_shape.type = tier4_perception_msgs::msg::Shape::POLYGON;
       break;
   }
   return iv_shape;
 }
 
-inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObject & object)
+inline auto convert(const autoware_perception_msgs::msg::TrackedObject & object)
 {
   tier4_perception_msgs::msg::DynamicObject iv_object;
   iv_object.id = object.object_id;
@@ -373,7 +373,7 @@ inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObject & ob
   return iv_object;
 }
 
-inline auto convert(const autoware_auto_perception_msgs::msg::TrackedObjects & objects)
+inline auto convert(const autoware_perception_msgs::msg::TrackedObjects & objects)
 {
   tier4_perception_msgs::msg::DynamicObjectArray iv_objects;
   iv_objects.header = objects.header;
