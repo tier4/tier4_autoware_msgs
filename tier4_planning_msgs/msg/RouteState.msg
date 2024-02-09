@@ -6,6 +6,7 @@ uint8 SET = 4
 uint8 REROUTING = 5
 uint8 ARRIVED = 6
 uint8 ABORTED = 7
+uint8 INTERRUPTED = 8
 
 builtin_interfaces/Time stamp
 uint8 state
