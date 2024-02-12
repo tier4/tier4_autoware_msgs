@@ -32,6 +32,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/PathChangeModuleArray.msg"
   "msg/PathChangeModuleId.msg"
   "msg/PathPoint.msg"
+  "msg/PathPointWithLaneId.msg"
+  "msg/PathWithLaneId.msg"
   "msg/RerouteAvailability.msg"
   "msg/Scenario.msg"
   "msg/StopFactor.msg"
@@ -44,6 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VelocityLimitClearCommand.msg"
   "msg/VelocityLimitConstraints.msg"
   DEPENDENCIES
+    autoware_planning_msgs
     geometry_msgs
     nav_msgs
     std_msgs
