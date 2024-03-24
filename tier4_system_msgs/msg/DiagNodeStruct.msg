@@ -1,1 +1,2 @@
 string path
+string type
