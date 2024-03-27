@@ -25,7 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetStop.srv"
   DEPENDENCIES
     autoware_common_msgs
-    std_msgs
+    builtin_interfaces
 )
 
 if(BUILD_TESTING)
