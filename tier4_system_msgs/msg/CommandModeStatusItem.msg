@@ -1,11 +1,11 @@
 uint8 UNDEFINED = 0
 
 # for main state
-uint8 DISABLED = 1
-uint8 CLEANUP = 2
-uint8 ENABLED = 3
-uint8 STANDBY = 4
-uint8 INTERRUPTED = 5
+uint8 DISABLED = 1   # Also used for target.
+uint8 STANDBY = 2    # Also used for target.
+uint8 ENABLED = 3    # Also used for target.
+uint8 HANDOVER = 4   # Also used for target.
+uint8 CLEANUP = 5
 uint8 ABORTED = 6
 uint8 WAIT_COMMAND_MODE_READY = 101
 uint8 WAIT_SOURCE_READY = 102
@@ -26,3 +26,7 @@ string mode
 uint8 state
 uint8 target
 uint8 mrm
+bool available
+bool continuable
+bool acceptable
+bool controllable
