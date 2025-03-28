@@ -1,6 +1,6 @@
 # Save.srv
 
-bool mode  
+bool mode
 float32 interval
 ---
 string file_name
