@@ -26,7 +26,7 @@ string mode
 uint8 state
 uint8 target
 uint8 mrm
-bool available
-bool continuable
-bool acceptable
-bool controllable
+bool mode_continuable
+bool mode_available
+bool ctrl_available
+bool transition_completed
