@@ -7,6 +7,7 @@ uint8 ENABLED = 3    # Also used for target.
 uint8 HANDOVER = 4   # Also used for target.
 uint8 CLEANUP = 5
 uint8 ABORTED = 6
+uint8 TRANSITION = 7
 uint8 WAIT_COMMAND_MODE_READY = 101
 uint8 WAIT_SOURCE_READY = 102
 uint8 WAIT_SOURCE_EXCLUSIVE = 103
@@ -16,17 +17,19 @@ uint8 WAIT_CONTROL_SELECTED = 106
 uint8 WAIT_COMMAND_MODE_STABLE = 107
 
 # for mrm state
-uint8 NONE = 1
+uint8 NORMAL = 1
 uint8 OPERATING = 2
 uint8 SUCCEEDED = 3
 uint8 FAILED = 4
 
 # variables
 string mode
+string debug
 uint8 state
-uint8 target
 uint8 mrm
 bool mode_continuable
 bool mode_available
-bool ctrl_available
+bool control_gate_request
+bool vehicle_gate_request
+bool transition_available
 bool transition_completed
