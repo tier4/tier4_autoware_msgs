@@ -1,3 +1,3 @@
 builtin_interfaces/Time stamp
-bool ctrl
-string mode
+string foreground
+string background
