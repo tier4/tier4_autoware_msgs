@@ -12,15 +12,17 @@ uint8 SUCCEEDED = 3
 uint8 FAILED = 4
 
 # for phase
-uint8 COMMAND_MODE = 1
-uint8 VEHICLE_GATE = 2
+uint8 NOT_SELECTED = 1
+uint8 CONTROL_GATE = 2
 uint8 NETWORK_GATE = 3
-uint8 CONTROL_GATE = 4
-uint8 NO_REQUEST = 9
+uint8 VEHICLE_GATE = 4
+
+# mode name
+string mode
 
 # main status
-string mode
-uint8 state
+uint8 mode_state
+uint8 gate_state
 uint8 mrm
 uint8 request_phase
 uint8 current_phase
@@ -32,7 +34,7 @@ bool transition_available
 bool transition_completed
 
 # detailed status
-uint8 command_mode_state
+uint8 transition_state
 uint8 vehicle_gate_state
 uint8 network_gate_state
 uint8 control_gate_state
