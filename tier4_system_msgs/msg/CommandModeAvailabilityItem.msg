@@ -1,0 +1,2 @@
+string mode
+bool available
