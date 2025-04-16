@@ -1,0 +1,5 @@
+std_msgs/Header header
+unique_identifier_msgs/UUID vehicle_id
+uint64 target_id
+jpn_signal_v2i_msgs/ExtraTrafficSignal[] car_lights
+jpn_signal_v2i_msgs/ExtraTrafficSignal[] pedestrian_lights
