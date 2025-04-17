@@ -38,10 +38,18 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ServiceLog.msg"
   "msg/ModeChangeAvailable.msg"
   "msg/MrmBehaviorStatus.msg"
+  "msg/CommandSourceStatus.msg"
+  "msg/CommandModeAvailability.msg"
+  "msg/CommandModeAvailabilityItem.msg"
+  "msg/CommandModeRequest.msg"
+  "msg/CommandModeStatus.msg"
+  "msg/CommandModeStatusItem.msg"
   "srv/OperateMrm.srv"
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
   "srv/ChangeTopicRelayControl.srv"
+  "srv/RequestMrm.srv"
+  "srv/SelectCommandSource.srv"
   DEPENDENCIES
     autoware_common_msgs
     builtin_interfaces
