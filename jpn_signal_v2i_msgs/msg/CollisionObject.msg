@@ -1,0 +1,4 @@
+autoware_perception_msgs/ObjectClassification type
+jpn_signal_v2i_msgs/GeoGraphPoint object_info
+builtin_interfaces/Time collision_time
+jpn_signal_v2i_msgs/LatLon collision_point

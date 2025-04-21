@@ -1,0 +1,4 @@
+bool has_start_position
+jpn_signal_v2i_msgs/LatLon start_position
+bool has_end_position
+jpn_signal_v2i_msgs/LatLon end_position

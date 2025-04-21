@@ -1,0 +1,7 @@
+std_msgs/Header header
+autoware_perception_msgs/TrafficLightGroup[] states
+bool has_min_rest_time
+float32 min_rest_time
+float32 min_rest_time_to_red
+bool has_max_rest_time
+float32 max_rest_time
