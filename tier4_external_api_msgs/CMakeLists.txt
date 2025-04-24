@@ -22,6 +22,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/ControlCommandStamped.msg
   msg/CpuStatus.msg
   msg/CpuUsage.msg
+  msg/DecisionFactorObject.msg
+  msg/DecisionFactorPointCloud.msg
   msg/DoorStatus.msg
   msg/Emergency.msg
   msg/EngageStatus.msg
@@ -36,6 +38,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MetadataPackages.msg
   msg/Observer.msg
   msg/Operator.msg
+  msg/PlanningFactor.msg
+  msg/PlanningFactorArray.msg
+  msg/PlanningFactorControlPoint.msg
   msg/RosbagCopyStatus.msg
   msg/RosbagLoggingMode.msg
   msg/RosbagRecordStatus.msg
@@ -77,6 +82,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     builtin_interfaces
     diagnostic_msgs
     geometry_msgs
+    unique_identifier_msgs
 )
 
 if(BUILD_TESTING)
