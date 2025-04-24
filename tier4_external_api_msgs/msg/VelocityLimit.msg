@@ -1,0 +1,6 @@
+builtin_interfaces/Time stamp
+string sender
+float32 max_velocity
+
+bool use_constraints false
+tier4_external_api_msgs/VelocityLimitConstraints constraints
