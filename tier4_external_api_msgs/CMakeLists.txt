@@ -42,6 +42,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/RosbagRollbackStatus.msg
   msg/ResponseStatus.msg
   msg/Route.msg
+  msg/RouteDistance.msg
   msg/RouteSection.msg
   msg/Service.msg
   msg/TextFile.msg
