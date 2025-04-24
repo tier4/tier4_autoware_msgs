@@ -44,8 +44,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/Route.msg
   msg/RouteSection.msg
   msg/Service.msg
-  msg/TextFile.msg
   msg/Steering.msg
+  msg/TextFile.msg
+  msg/TrafficLightElement.msg
+  msg/TrafficLightGroup.msg
   msg/TurnSignal.msg
   msg/TurnSignalStamped.msg
   msg/VehicleCommand.msg

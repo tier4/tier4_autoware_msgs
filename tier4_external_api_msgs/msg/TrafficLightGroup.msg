@@ -1,0 +1,2 @@
+int64 traffic_light_group_id
+tier4_external_api_msgs/TrafficLightElement[] elements
