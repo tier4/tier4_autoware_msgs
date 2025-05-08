@@ -1,0 +1,13 @@
+std_msgs/Header header
+unique_identifier_msgs/UUID vehicle_id
+uint32 target_id
+jpn_signal_v2i_msgs/DangerType type
+bool has_stopline
+jpn_signal_v2i_msgs/GeoLine stopline
+bool has_parking_vehicle_area
+jpn_signal_v2i_msgs/GeoLine parking_vehicle_area
+bool has_free_space_area
+jpn_signal_v2i_msgs/GeoLine free_space_area
+jpn_signal_v2i_msgs/CollisionObject[] objects
+bool has_departure_time
+builtin_interfaces/Time departure_time
