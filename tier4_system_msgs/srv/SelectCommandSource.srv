@@ -1,4 +1,4 @@
-string source
+uint16 source
 bool transition
 ---
 autoware_common_msgs/ResponseStatus status
