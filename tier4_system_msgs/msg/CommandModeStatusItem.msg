@@ -18,7 +18,7 @@ uint8 NETWORK_GATE = 3
 uint8 VEHICLE_GATE = 4
 
 # mode identifier
-string mode
+uint16 mode
 
 # main status
 uint8 mode_state

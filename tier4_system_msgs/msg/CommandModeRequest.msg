@@ -1,3 +1,3 @@
 builtin_interfaces/Time stamp
-string foreground
-string background
+uint16 foreground
+uint16 background
