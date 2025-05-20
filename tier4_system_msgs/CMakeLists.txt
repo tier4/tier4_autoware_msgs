@@ -42,6 +42,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CommandModeAvailability.msg"
   "msg/CommandModeAvailabilityItem.msg"
   "msg/CommandModeRequest.msg"
+  "msg/CommandModeRequestItem.msg"
   "msg/CommandModeStatus.msg"
   "msg/CommandModeStatusItem.msg"
   "srv/OperateMrm.srv"
