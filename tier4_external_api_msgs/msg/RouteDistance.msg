@@ -1,2 +1,2 @@
 builtin_interfaces/Time stamp
-float64 data
+float64 remaining_distance
