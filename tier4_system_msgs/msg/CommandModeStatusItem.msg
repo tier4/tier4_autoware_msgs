@@ -19,11 +19,21 @@ uint8 VEHICLE_GATE = 4
 
 # mode identifier
 uint16 mode
+uint16 mrm
+
+bool complete
+bool request
+bool transition
+
+bool vehicle_mode_selected
+bool command_mode_selected
+bool command_mode_enabled
+bool command_mode_disabled
+bool command_mode_transition
 
 # main status
 uint8 mode_state
 uint8 gate_state
-uint8 mrm
 uint8 request_phase
 uint8 current_phase
 
