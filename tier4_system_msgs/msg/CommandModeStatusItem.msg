@@ -24,12 +24,16 @@ uint16 mrm
 bool complete
 bool request
 bool transition
+bool selected
 
-bool vehicle_mode_selected
-bool command_mode_selected
+bool command_mode_exclusive
 bool command_mode_enabled
 bool command_mode_disabled
-bool command_mode_transition
+
+
+
+bool command_mode_selected
+bool vehicle_mode_selected
 
 # main status
 uint8 mode_state
@@ -38,9 +42,9 @@ uint8 request_phase
 uint8 current_phase
 
 # conditions
-bool mode_continuable
-bool mode_available
-bool transition_available
+bool continuable
+bool available
+bool activatable
 bool transition_completed
 
 # detailed status
