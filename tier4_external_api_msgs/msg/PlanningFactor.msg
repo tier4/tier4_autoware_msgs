@@ -32,7 +32,7 @@ string USER_DEFINED_DETECTION_AREA = "user_defined_detection_area"
 string VIRTUAL_TRAFFIC_LIGHT = "virtual_traffic_light"
 
 # behavior variables
-builtin_interfaces/Time stamp  # decision time
+std_msgs/Header header  # for transform control_points
 uint16 behavior_type
 string behavior_name
 string behavior_detail
