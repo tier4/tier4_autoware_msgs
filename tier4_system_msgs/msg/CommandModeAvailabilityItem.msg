@@ -1,2 +1,2 @@
-string mode
+uint16 mode
 bool available

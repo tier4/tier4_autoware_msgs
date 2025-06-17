@@ -1,3 +1,3 @@
 builtin_interfaces/Time stamp
-string source
+uint16 source
 bool transition
