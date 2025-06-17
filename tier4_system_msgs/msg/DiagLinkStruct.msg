@@ -1,6 +1,4 @@
 # The index of nodes/diags in the graph struct message.
+# Note that the index for diags is offset by the size of the nodes.
 uint32 parent
 uint32 child
-
-# Whether the child is a leaf, The parent is always not.
-bool is_leaf
