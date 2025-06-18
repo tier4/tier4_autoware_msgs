@@ -1,3 +1,2 @@
-string path
-string type
+uint32 parent
 string name
