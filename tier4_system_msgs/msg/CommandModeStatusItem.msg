@@ -5,6 +5,7 @@ uint8 OPERATING = 2
 uint8 SUCCEEDED = 3
 uint8 FAILED = 4
 
+# See the autoware_command_mode_types package for the mode value.
 uint16 mode
 uint16 mrm
 bool transition
