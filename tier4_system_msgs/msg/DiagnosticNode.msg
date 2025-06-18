@@ -1,2 +1,0 @@
-diagnostic_msgs/DiagnosticStatus status
-tier4_system_msgs/DiagnosticLink[] links
