@@ -16,9 +16,6 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AutowareState.msg"
-  "msg/DiagnosticGraph.msg"
-  "msg/DiagnosticLink.msg"
-  "msg/DiagnosticNode.msg"
   "msg/DiagGraphStruct.msg"
   "msg/DiagGraphStatus.msg"
   "msg/DiagNodeStruct.msg"
@@ -49,6 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
   "srv/ChangeTopicRelayControl.srv"
+  "srv/ResetDiagGraph.srv"
   "srv/SelectCommandSource.srv"
   DEPENDENCIES
     autoware_common_msgs
