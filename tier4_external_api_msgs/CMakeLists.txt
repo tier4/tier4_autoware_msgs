@@ -33,6 +33,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/GearShift.msg
   msg/GearShiftStamped.msg
   msg/Heartbeat.msg
+  msg/Level4Availability.msg
+  msg/Level4DrivingStatus.msg
   msg/LocalizationScore.msg
   msg/LocalizationScoreArray.msg
   msg/MapHash.msg
@@ -63,6 +65,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/VehicleStatusStamped.msg
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
+  srv/EnableLevel4Driving.srv
   srv/Engage.srv
   srv/GetMetadataPackages.srv
   srv/GetRosbagCopyList.srv
