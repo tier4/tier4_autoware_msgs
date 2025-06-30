@@ -1,0 +1,6 @@
+bool enable_level4_driving
+---
+uint32 ERROR_NOT_INITIALIZED = 5
+uint32 ERROR_INVALID_LEVEL = 6
+uint32 ERROR_CANNOT_START_AUTOWARE = 7
+tier4_external_api_msgs/ResponseStatus status
