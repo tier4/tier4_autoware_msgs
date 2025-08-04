@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/ControlCommand.msg
   msg/ControlCommandStamped.msg
   msg/CpuStatus.msg
+  msg/CpuTemperature.msg
   msg/CpuUsage.msg
   msg/DoorStatus.msg
   msg/Emergency.msg
@@ -29,11 +30,19 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/FailSafeStateStamped.msg
   msg/GearShift.msg
   msg/GearShiftStamped.msg
+  msg/GpuStatus.msg
+  msg/GpuUnitStatus.msg
   msg/Heartbeat.msg
+  msg/HddDeviceStatus.msg
+  msg/HddPartitionStatus.msg
+  msg/HddStatus.msg
   msg/LocalizationScore.msg
   msg/LocalizationScoreArray.msg
   msg/MapHash.msg
   msg/MetadataPackages.msg
+  msg/MemoryStatus.msg
+  msg/NetworkInterfaceStatus.msg
+  msg/NetworkStatus.msg
   msg/Observer.msg
   msg/Operator.msg
   msg/RosbagCopyStatus.msg
@@ -44,8 +53,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/Route.msg
   msg/RouteSection.msg
   msg/Service.msg
-  msg/TextFile.msg
   msg/Steering.msg
+  msg/SystemMonitor.msg
+  msg/TextFile.msg
   msg/TurnSignal.msg
   msg/TurnSignalStamped.msg
   msg/VehicleCommand.msg
