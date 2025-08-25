@@ -15,11 +15,13 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/LocalizedPositionValidatorPrediction.msg"
   "srv/InitializeLocalization.srv"
   "srv/PoseWithCovarianceStamped.srv"
   DEPENDENCIES
     autoware_common_msgs
     geometry_msgs
+    std_msgs
 )
 
 if(BUILD_TESTING)
