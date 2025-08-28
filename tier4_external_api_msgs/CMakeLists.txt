@@ -87,6 +87,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetOperator.srv
   srv/SetEmergency.srv
   srv/SetPose.srv
+  srv/SetPreferredLane.srv
+  srv/SetPreferredPrimitive.srv
   srv/SetRosbagLoggingMode.srv
   srv/SetRosbagRecord.srv
   srv/SetRosbagRollback.srv
@@ -96,6 +98,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/StartRosbagCopy.srv
   DEPENDENCIES
     builtin_interfaces
+    autoware_common_msgs
+    autoware_planning_msgs
     diagnostic_msgs
     geometry_msgs
     unique_identifier_msgs
