@@ -1,0 +1,6 @@
+int64 lane_id
+uint8 code
+autoware_planning_msgs/LaneletRoute current_route
+---
+autoware_planning_msgs/LaneletRoute new_route
+autoware_common_msgs/ResponseStatus status

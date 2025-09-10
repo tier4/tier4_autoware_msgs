@@ -52,6 +52,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VelocityLimitClearCommand.msg"
   "msg/VelocityLimitConstraints.msg"
   "srv/ClearRoute.srv"
+  "srv/ManualLaneChangeRequest.srv"
   "srv/SetPreferredLane.srv"
   "srv/SetLaneletRoute.srv"
   "srv/SetWaypointRoute.srv"
