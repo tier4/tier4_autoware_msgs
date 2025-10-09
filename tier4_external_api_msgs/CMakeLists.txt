@@ -71,6 +71,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/VehicleCommandStamped.msg
   msg/VehicleStatus.msg
   msg/VehicleStatusStamped.msg
+  msg/VelocityLimit.msg
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
   srv/Engage.srv
