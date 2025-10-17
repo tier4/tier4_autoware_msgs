@@ -88,7 +88,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetEmergency.srv
   srv/SetPose.srv
   srv/SetPreferredLane.srv
-  srv/SetPreferredPrimitive.srv
   srv/SetRosbagLoggingMode.srv
   srv/SetRosbagRecord.srv
   srv/SetRosbagRollback.srv
