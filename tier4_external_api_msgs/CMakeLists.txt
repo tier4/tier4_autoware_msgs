@@ -98,7 +98,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES
     builtin_interfaces
     autoware_common_msgs
-    autoware_planning_msgs
     diagnostic_msgs
     geometry_msgs
     unique_identifier_msgs
