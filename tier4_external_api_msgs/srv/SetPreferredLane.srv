@@ -1,0 +1,9 @@
+# Constants for specifying the direction of lane-change
+uint8 LEFT = 0
+uint8 RIGHT = 1
+uint8 AUTO = 2
+
+# Holds the direction to which the preferred-lanes need to be shifted to
+uint8 lane_change_direction
+---
+autoware_common_msgs/ResponseStatus status
