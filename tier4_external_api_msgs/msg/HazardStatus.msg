@@ -1,3 +1,4 @@
+# This message is deprecated and will be removed in 2026/09.
 uint8 NO_FAULT = 0
 uint8 SAFE_FAULT = 1
 uint8 LATENT_FAULT = 2
