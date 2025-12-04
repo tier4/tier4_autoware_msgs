@@ -35,6 +35,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/GearShiftStamped.msg
   msg/GpuStatus.msg
   msg/GpuUnitStatus.msg
+  msg/HazardStatus.msg
+  msg/HazardStatusStamped.msg
   msg/Heartbeat.msg
   msg/HddDeviceStatus.msg
   msg/HddPartitionStatus.msg
