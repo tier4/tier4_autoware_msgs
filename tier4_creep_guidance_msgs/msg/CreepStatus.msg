@@ -1,0 +1,6 @@
+int64 id
+tier4_creep_guidance_msgs/Module module
+tier4_creep_guidance_msgs/Command command
+tier4_creep_guidance_msgs/State state
+float32 start_distance
+float32 finish_distance

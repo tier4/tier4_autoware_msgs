@@ -1,0 +1,6 @@
+uint8 type
+
+uint8 NONE = 0
+uint8 CROSSWALK = 1
+uint8 INTERSECTION = 2
+uint8 INTERSECTION_OCCLUSION = 3
