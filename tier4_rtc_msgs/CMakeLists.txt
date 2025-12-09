@@ -21,12 +21,15 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CooperateResponse.msg"
   "msg/CooperateStatus.msg"
   "msg/CooperateStatusArray.msg"
+  "msg/CreepCommand.msg"
+  "msg/CreepResponse.msg"
   "msg/AutoModeStatus.msg"
   "msg/AutoModeStatusArray.msg"
   "msg/Module.msg"
   "srv/AutoMode.srv"
   "srv/AutoModeWithModule.srv"
   "srv/CooperateCommands.srv"
+  "srv/CreepCommands.srv"
   DEPENDENCIES
     builtin_interfaces
     unique_identifier_msgs
