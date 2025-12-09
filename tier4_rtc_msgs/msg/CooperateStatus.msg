@@ -23,6 +23,12 @@ tier4_rtc_msgs/State state
 # FALSE: Manual mode (it needs human operator's approval to execute.)
 bool auto_mode
 
+# Indicate whether the creep is supported
+bool creep_supported
+
+# Indicate whether the creep is triggered
+bool creep_triggered
+
 # Section which will be modified when this cooperate request is approved.
 float32 start_distance
 float32 finish_distance
