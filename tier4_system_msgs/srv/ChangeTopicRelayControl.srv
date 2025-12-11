@@ -1,0 +1,3 @@
+bool relay_on
+---
+autoware_common_msgs/ResponseStatus status

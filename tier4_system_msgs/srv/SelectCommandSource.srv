@@ -1,0 +1,5 @@
+# See the autoware_command_mode_types package for the source value.
+uint16 source
+bool transition
+---
+autoware_common_msgs/ResponseStatus status

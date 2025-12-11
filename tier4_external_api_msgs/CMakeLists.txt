@@ -21,37 +21,59 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/ControlCommand.msg
   msg/ControlCommandStamped.msg
   msg/CpuStatus.msg
+  msg/CpuTemperature.msg
   msg/CpuUsage.msg
+  msg/DecisionFactorObject.msg
+  msg/DecisionFactorPointCloud.msg
   msg/DoorStatus.msg
+  msg/ElectionStatus.msg
   msg/Emergency.msg
   msg/EngageStatus.msg
   msg/FailSafeState.msg
   msg/FailSafeStateStamped.msg
   msg/GearShift.msg
   msg/GearShiftStamped.msg
+  msg/GpuStatus.msg
+  msg/GpuUnitStatus.msg
+  msg/HazardStatus.msg
+  msg/HazardStatusStamped.msg
   msg/Heartbeat.msg
+  msg/HddDeviceStatus.msg
+  msg/HddPartitionStatus.msg
+  msg/HddStatus.msg
   msg/LocalizationScore.msg
   msg/LocalizationScoreArray.msg
   msg/MapHash.msg
   msg/MetadataPackages.msg
+  msg/MemoryStatus.msg
+  msg/NetworkInterfaceStatus.msg
+  msg/NetworkStatus.msg
   msg/Observer.msg
   msg/Operator.msg
+  msg/PlanningFactor.msg
+  msg/PlanningFactorArray.msg
+  msg/PlanningFactorControlPoint.msg
   msg/RosbagCopyStatus.msg
   msg/RosbagLoggingMode.msg
   msg/RosbagRecordStatus.msg
   msg/RosbagRollbackStatus.msg
   msg/ResponseStatus.msg
   msg/Route.msg
+  msg/RouteDistance.msg
   msg/RouteSection.msg
   msg/Service.msg
-  msg/TextFile.msg
   msg/Steering.msg
+  msg/SystemMonitor.msg
+  msg/TextFile.msg
+  msg/TrafficLightElement.msg
+  msg/TrafficLightGroup.msg
   msg/TurnSignal.msg
   msg/TurnSignalStamped.msg
   msg/VehicleCommand.msg
   msg/VehicleCommandStamped.msg
   msg/VehicleStatus.msg
   msg/VehicleStatusStamped.msg
+  msg/VelocityLimit.msg
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
   srv/Engage.srv
@@ -61,11 +83,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/InitializePose.srv
   srv/InitializePoseAuto.srv
   srv/PauseDriving.srv
+  srv/ResetRedundancySwitcher.srv
   srv/SetDoor.srv
   srv/SetObserver.srv
   srv/SetOperator.srv
   srv/SetEmergency.srv
   srv/SetPose.srv
+  srv/SetPreferredLane.srv
   srv/SetRosbagLoggingMode.srv
   srv/SetRosbagRecord.srv
   srv/SetRosbagRollback.srv
@@ -75,8 +99,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/StartRosbagCopy.srv
   DEPENDENCIES
     builtin_interfaces
+    autoware_common_msgs
     diagnostic_msgs
     geometry_msgs
+    unique_identifier_msgs
 )
 
 if(BUILD_TESTING)
