@@ -1,4 +1,3 @@
-# Timestamp of the emergency state
 builtin_interfaces/Time stamp
 
 # Emergency state

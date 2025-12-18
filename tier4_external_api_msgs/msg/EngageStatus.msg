@@ -1,4 +1,3 @@
-# Timestamp of the engage status
 builtin_interfaces/Time stamp
 
 # Engage state

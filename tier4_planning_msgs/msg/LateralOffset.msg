@@ -1,4 +1,3 @@
-# Timestamp of the lateral offset
 builtin_interfaces/Time stamp
 
 # Lateral offset from the reference path [m]
