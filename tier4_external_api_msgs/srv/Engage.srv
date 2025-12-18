@@ -1,3 +1,5 @@
+# Engage state to set
+# true: engage autonomous driving, false: disengage autonomous driving
 bool engage
 ---
 tier4_external_api_msgs/ResponseStatus status

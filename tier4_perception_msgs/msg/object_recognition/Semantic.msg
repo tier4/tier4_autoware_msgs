@@ -1,3 +1,4 @@
+# Object classification types
 uint8 UNKNOWN=0
 uint8 CAR=1
 uint8 TRUCK=2
@@ -6,5 +7,9 @@ uint8 BICYCLE=4
 uint8 MOTORBIKE=5
 uint8 PEDESTRIAN=6
 uint8 ANIMAL=7
+
+# Classification type (use constants above)
 uint32 type
+
+# Classification confidence score. Range: 0.0 to 1.0
 float64 confidence

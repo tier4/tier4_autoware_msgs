@@ -1,3 +1,6 @@
+# Get list of rosbag directories available for copy
 ---
 tier4_external_api_msgs/ResponseStatus status
+
+# Newline-separated list of directory paths available for copy
 string copy_directory_list

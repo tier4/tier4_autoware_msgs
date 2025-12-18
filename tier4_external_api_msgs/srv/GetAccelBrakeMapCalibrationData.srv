@@ -1,4 +1,10 @@
+# Get acceleration and brake map calibration data
 ---
+# Graph image as PNG byte array
 uint8[] graph_image
+
+# Acceleration map data in CSV format
 string accel_map
+
+# Brake map data in CSV format
 string brake_map
