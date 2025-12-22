@@ -1,3 +1,5 @@
+# Emergency state to set
+# true: activate emergency stop, false: deactivate emergency stop
 bool emergency
 ---
 tier4_external_api_msgs/ResponseStatus status

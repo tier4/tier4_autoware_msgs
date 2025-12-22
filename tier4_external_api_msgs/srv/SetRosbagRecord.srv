@@ -1,3 +1,5 @@
+# Recording state
+# true: start recording, false: stop recording
 bool record
 ---
 tier4_external_api_msgs/ResponseStatus status
