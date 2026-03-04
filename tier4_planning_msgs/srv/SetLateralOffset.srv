@@ -1,0 +1,18 @@
+# Options for shift_mode
+uint8 RAW_VALUE = 1
+uint8 DIRECTION = 2
+
+# Options for shift_direction_value
+uint8 RESET = 0
+uint8 LEFT = 1
+uint8 RIGHT = 2
+
+uint8 shift_mode
+
+# When shift_mode = RAW_VALUE (in meters)
+float32 shift_value
+
+# When shift_mode = DIRECTION
+uint8 shift_direction_value
+---
+autoware_common_msgs/ResponseStatus status
