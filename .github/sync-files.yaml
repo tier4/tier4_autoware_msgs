@@ -1,8 +1,12 @@
-- repository: autowarefoundation/autoware
+- repository: autowarefoundation/sync-file-templates
+  source-dir: sources
   files:
-    - source: LICENSE
     - source: .github/dependabot.yaml
     - source: .github/stale.yml
+    - source: .github/workflows/backport.yaml
+    - source: .github/workflows/build-and-test.yaml
+    - source: .github/workflows/build-and-test-differential.yaml
+    - source: .github/workflows/cancel-previous-workflows.yaml
     - source: .github/workflows/pre-commit.yaml
     - source: .github/workflows/pre-commit-optional.yaml
     - source: .github/workflows/semantic-pull-request.yaml
@@ -11,12 +15,11 @@
     - source: .markdown-link-check.json
     - source: .markdownlint.yaml
     - source: .pre-commit-config-optional.yaml
+    - source: .pre-commit-config.yaml
     - source: .prettierignore
     - source: .prettierrc.yaml
     - source: .yamllint.yaml
-
-- repository: autowarefoundation/autoware_common
-  files:
-    - source: .github/workflows/build-and-test.yaml
-    - source: .github/workflows/build-and-test-differential.yaml
-    - source: .github/workflows/cancel-previous-workflows.yaml
+    - source: CODE_OF_CONDUCT.md
+    - source: CONTRIBUTING.md
+    - source: DISCLAIMER.md
+    - source: LICENSE
