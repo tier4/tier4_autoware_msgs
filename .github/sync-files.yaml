@@ -21,5 +21,4 @@
     - source: .yamllint.yaml
     - source: CODE_OF_CONDUCT.md
     - source: CONTRIBUTING.md
-    - source: DISCLAIMER.md
     - source: LICENSE
