@@ -5,7 +5,7 @@ builtin_interfaces/Time stamp
 # Unit: [m/s], Value: Always Positive
 float32 front_left_wheel_speed
 
-# Unit: [m/s], Value: Always Positive 
+# Unit: [m/s], Value: Always Positive
 float32 front_right_wheel_speed
 
 # Unit: [m/s], Value: Always Positive
