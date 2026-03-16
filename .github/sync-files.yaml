@@ -12,6 +12,8 @@
     - source: .github/workflows/semantic-pull-request.yaml
     - source: .github/workflows/spell-check-differential.yaml
     - source: .github/workflows/sync-files.yaml
+    - source: .clang-format
+    - source: .clang-tidy
     - source: .markdown-link-check.json
     - source: .markdownlint.yaml
     - source: .pre-commit-config-optional.yaml
@@ -21,5 +23,5 @@
     - source: .yamllint.yaml
     - source: CODE_OF_CONDUCT.md
     - source: CONTRIBUTING.md
-    - source: DISCLAIMER.md
+    - source: CPPLINT.cfg
     - source: LICENSE
