@@ -77,6 +77,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
   srv/Engage.srv
+  srv/GetMaintenanceState.srv
   srv/GetMetadataPackages.srv
   srv/GetRosbagCopyList.srv
   srv/GetTextFile.srv
@@ -88,6 +89,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetObserver.srv
   srv/SetOperator.srv
   srv/SetEmergency.srv
+  srv/SetMaintenanceState.srv
   srv/SetPose.srv
   srv/SetPreferredLane.srv
   srv/SetRosbagLoggingMode.srv
