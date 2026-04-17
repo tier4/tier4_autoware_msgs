@@ -1,8 +1,8 @@
 # Options for shift_mode
 uint8 EXPLICIT_LATERAL_OFFSET_AMOUNT = 1
-uint8 DIRECTION = 2
+uint8 LATERAL_OFFSET_DIRECTION = 2
 
-# Options for shift_direction_value (used when shift_mode = DIRECTION)
+# Options for shift_direction_value (used when shift_mode = LATERAL_OFFSET_DIRECTION)
 uint8 RESET = 0
 uint8 LEFT = 1
 uint8 RIGHT = 2
@@ -14,7 +14,7 @@ uint8 shift_mode
 # positive -> left of the reference path, negative -> right of the reference path
 float32 shift_value
 
-# When shift_mode = DIRECTION
+# When shift_mode = LATERAL_OFFSET_DIRECTION
 uint8 shift_direction_value
 ---
 # code
