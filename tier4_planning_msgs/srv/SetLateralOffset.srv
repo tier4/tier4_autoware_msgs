@@ -18,7 +18,8 @@ float32 shift_value
 uint8 shift_direction_value
 ---
 # code
-uint16 SUCCESS = 0
+uint16 UNKNOWN = 0
+uint16 SUCCESS = 1
 uint16 ERROR_UNKNOWN = 10000
 uint16 ERROR_INVALID_MODE = 10001
 uint16 ERROR_INVALID_DIRECTION = 10002
