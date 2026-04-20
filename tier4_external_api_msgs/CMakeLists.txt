@@ -85,6 +85,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetObserver.srv
   srv/SetOperator.srv
   srv/SetEmergency.srv
+  srv/SetLateralOffset.srv
   srv/SetPose.srv
   srv/SetPreferredLane.srv
   srv/SetRosbagLoggingMode.srv
