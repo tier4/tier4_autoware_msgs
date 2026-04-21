@@ -1,3 +1,2 @@
-bool maintenance
----
 tier4_external_api_msgs/ResponseStatus status
+tier4_external_api_msgs/MaintenanceMode mode

@@ -43,6 +43,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/HddStatus.msg
   msg/LocalizationScore.msg
   msg/LocalizationScoreArray.msg
+  msg/MaintenanceMode.msg
   msg/MapHash.msg
   msg/MetadataPackages.msg
   msg/MemoryStatus.msg
@@ -77,7 +78,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
   srv/Engage.srv
-  srv/GetMaintenanceState.srv
+  srv/GetMaintenanceMode.srv
   srv/GetMetadataPackages.srv
   srv/GetRosbagCopyList.srv
   srv/GetTextFile.srv
@@ -89,7 +90,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetObserver.srv
   srv/SetOperator.srv
   srv/SetEmergency.srv
-  srv/SetMaintenanceState.srv
+  srv/SetMaintenanceMode.srv
   srv/SetPose.srv
   srv/SetPreferredLane.srv
   srv/SetRosbagLoggingMode.srv
