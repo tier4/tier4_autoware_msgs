@@ -17,7 +17,7 @@ float32 shift_value
 # When shift_mode = LATERAL_OFFSET_DIRECTION
 uint8 shift_direction_value
 ---
-# These constants define values for autoware_common_msgs/ResponseStatus.code in this service response.
+# Constants for response_code
 
 # No result has been assigned yet.
 uint16 UNKNOWN = 0
@@ -39,5 +39,9 @@ uint16 ERROR_MODULES_CONFLICTING = 10005
 uint16 WARN_UNKNOWN = 20000
 # The requested shift exceeded the limit and was clamped to the maximum allowed offset.
 uint16 WARN_EXCEEDED_LIMIT = 20001
+
+# response_code uses the constants above, and may also use autoware_common_msgs/msg/ResponseStatus.code
+# values with the same numeric definitions; this service uses SERVICE_UNREADY and PARAMETER_ERROR in that way.
+uint16 response_code
 
 autoware_common_msgs/ResponseStatus status
