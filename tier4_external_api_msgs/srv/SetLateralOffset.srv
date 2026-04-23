@@ -17,16 +17,7 @@ float32 shift_value
 # When shift_mode = LATERAL_OFFSET_DIRECTION
 uint8 shift_direction_value
 ---
-# code
-uint16 UNKNOWN = 0
-uint16 SUCCESS = 1
-uint16 ERROR_UNKNOWN = 10000
-uint16 ERROR_INVALID_MODE = 10001
-uint16 ERROR_INVALID_DIRECTION = 10002
-uint16 ERROR_EXCEEDED_LIMIT = 10003
-uint16 ERROR_SHIFT_GAP_TOO_SMALL = 10004
-uint16 ERROR_MODULES_CONFLICTING = 10005
-uint16 WARN_UNKNOWN = 20000
-uint16 WARN_EXCEEDED_LIMIT = 20001
+# response code is propagated from tier4_planning_msgs/srv/SetLateralOffset
+uint16 response_code
 
-tier4_external_api_msgs/ResponseStatus status
+autoware_common_msgs/ResponseStatus status
