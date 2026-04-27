@@ -53,6 +53,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VelocityLimitConstraints.msg"
   "srv/ClearRoute.srv"
   "srv/SetLaneletRoute.srv"
+  "srv/SetLateralOffset.srv"
   "srv/SetWaypointRoute.srv"
   DEPENDENCIES
     autoware_common_msgs
