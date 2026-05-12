@@ -31,6 +31,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/EngageStatus.msg
   msg/FailSafeState.msg
   msg/FailSafeStateStamped.msg
+  msg/FailureNotification.msg
+  msg/FailureNotificationArray.msg
   msg/GearShift.msg
   msg/GearShiftStamped.msg
   msg/GpuStatus.msg
