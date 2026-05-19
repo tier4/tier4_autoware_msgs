@@ -1,4 +1,3 @@
-
 string diag_path          # Corresponding diagnostic graph path (e.g. /localization/001-topic_status/initialpose)
 uint8 diag_level          # Corresponding diagnostic level (0=OK, 1=WARN, 2=ERROR, 3=STALE)
 
