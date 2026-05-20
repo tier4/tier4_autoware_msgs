@@ -24,6 +24,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/object_recognition/Semantic.msg"
   "msg/object_recognition/Shape.msg"
   "msg/object_recognition/State.msg"
+  "msg/proximity_hazard/ProximityHazardObject.msg"
+  "msg/proximity_hazard/ProximityHazardObjects.msg"
   "msg/traffic_light/TrafficLightElement.msg"
   "msg/traffic_light/TrafficLightRoi.msg"
   "msg/traffic_light/TrafficLightRoiArray.msg"
