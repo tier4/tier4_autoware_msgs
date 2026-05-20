@@ -1,0 +1,4 @@
+bool filter
+---
+bool success
+string message
