@@ -48,6 +48,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ChangeTopicRelayControl.srv"
   "srv/ResetDiagGraph.srv"
   "srv/SelectCommandSource.srv"
+  "srv/SetDiagGraphOverride.srv"
   DEPENDENCIES
     autoware_common_msgs
     builtin_interfaces
