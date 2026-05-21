@@ -15,11 +15,14 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  srv/Announce.srv
-  srv/SetVolume.srv
+  "msg/proximity_hazard/ProximityHazardObject.msg"
+  "msg/proximity_hazard/ProximityHazardObjects.msg"
+  "srv/Announce.srv"
+  "srv/SetVolume.srv"
   DEPENDENCIES
-    builtin_interfaces
-    tier4_external_api_msgs
+  autoware_perception_msgs
+  builtin_interfaces
+  tier4_external_api_msgs
 )
 
 if(BUILD_TESTING)
