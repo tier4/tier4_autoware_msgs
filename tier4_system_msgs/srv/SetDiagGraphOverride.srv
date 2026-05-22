@@ -3,6 +3,7 @@ string path
 
 # The level to override. The value is the same as diagnostic_msgs/msg/DiagnosticStatus.
 # The available values are OK, WARN, ERROR, and CLEAR that resets the override.
+# https://github.com/ros2/common_interfaces/blob/rolling/diagnostic_msgs/msg/DiagnosticStatus.msg
 byte CLEAR = 255
 byte level
 ---
