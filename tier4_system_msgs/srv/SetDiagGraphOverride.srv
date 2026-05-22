@@ -1,4 +1,9 @@
-string path  # The path of the target diagnostic graph node.
-byte level   # The level to override. The value 255 resets the override.
+# The path of the target diagnostic graph node.
+string path
+
+# The level to override. The value is the same as diagnostic_msgs/msg/DiagnosticStatus.
+# The available values are OK, WARN, ERROR, and CLEAR that resets the override.
+byte CLEAR = 255
+byte level
 ---
 autoware_common_msgs/ResponseStatus status
