@@ -22,6 +22,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/IsPaused.msg"
   "srv/SetPause.srv"
   "msg/IsStopped.msg"
+  "msg/JerkConstantDecelerationTrigger.msg"
   "srv/SetStop.srv"
   DEPENDENCIES
     autoware_common_msgs
