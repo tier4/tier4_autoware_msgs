@@ -48,7 +48,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ChangeAutowareControl.srv"
   "srv/ChangeTopicRelayControl.srv"
   "srv/ResetDiagGraph.srv"
-  "srv/ResetRedundancySwitcher"
+  "srv/ResetRedundancySwitcher.srv"
   "srv/SelectCommandSource.srv"
   DEPENDENCIES
     autoware_common_msgs
