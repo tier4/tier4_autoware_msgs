@@ -1,0 +1,10 @@
+string destination
+builtin_interfaces/Time subscribed_stamp
+
+builtin_interfaces/Time encoded_stamp
+tier4_v2x_msgs/ResultCode encode_result_code
+string encode_error_msg
+
+builtin_interfaces/Time sent_stamp
+tier4_v2x_msgs/ResultCode send_result_code
+string send_error_msg

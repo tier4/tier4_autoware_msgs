@@ -1,0 +1,13 @@
+uint16 yaw
+uint8 brake_stat
+uint8 aux_brake_stat
+uint8 throt_pos
+uint8 ext_light
+uint8 acc_stat
+uint8 cacc_stat
+uint8 pcs_stat
+uint8 abs_stat
+uint8 trc_stat
+uint8 esc_stat
+uint8 lka_stat
+uint8 ldw_stat

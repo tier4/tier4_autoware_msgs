@@ -1,0 +1,3 @@
+tier4_v2x_msgs/Rc013Rc016Td001FreeFieldManagementInfo management_info
+tier4_v2x_msgs/Rc013Rc016Td001IndividualAppDataManagementInfo[] management_info_set
+uint8[] individual_app_data

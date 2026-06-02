@@ -1,0 +1,9 @@
+uint8 movement_phase_state
+uint32 start_time_date
+uint8 start_time_day_type
+uint32 start_time_time
+uint16 min_time_to_change
+uint16 max_time_to_change
+uint16 likely_time
+uint8 time_interval_confidence
+uint16 next_time

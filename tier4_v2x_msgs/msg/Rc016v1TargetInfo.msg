@@ -1,0 +1,14 @@
+uint8 common_service_id
+uint8 target_message_id
+uint8 target_version
+uint32 target_id
+uint8 increment_counter
+uint8 data_length
+uint8 individual_option_flag
+bool leap_second
+uint8 hour
+uint8 minute
+uint16 second
+Rc016v1TargetPosition position
+Rc016v1TargetState state
+Rc016v1TargetAttributes attributes

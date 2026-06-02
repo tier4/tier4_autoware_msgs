@@ -1,0 +1,10 @@
+builtin_interfaces/Time stamp
+uint16 spat_message_id
+uint32 spat_minute_of_the_year
+uint16 road_regulator_id
+uint16 intersection_reference_id
+uint8 msg_count
+uint16 intersection_status
+uint32 minute_of_the_year
+uint16 d_second
+MovementState[] movement_states

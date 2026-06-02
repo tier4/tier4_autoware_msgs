@@ -1,0 +1,2 @@
+Rc016v1SystemStatus system_status
+uint8 common_option_flag

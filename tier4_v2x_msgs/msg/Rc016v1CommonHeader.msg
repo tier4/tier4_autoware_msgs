@@ -1,0 +1,12 @@
+uint8 service_standard_id
+uint8 operation_code
+uint8 roadside_message_version
+uint8 increment_counter
+uint16 roadside_message_id
+uint32 roadside_equipment_id
+bool leap_second
+uint8 hour
+uint8 minute
+uint16 second
+uint16 message_size
+uint16 extra

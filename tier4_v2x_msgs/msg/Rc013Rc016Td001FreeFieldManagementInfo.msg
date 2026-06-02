@@ -1,0 +1,2 @@
+uint8 free_app_header_len
+uint8 indiv_app_data_num

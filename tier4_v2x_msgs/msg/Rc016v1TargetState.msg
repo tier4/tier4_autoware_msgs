@@ -1,0 +1,8 @@
+uint16 speed
+uint16 heading
+int16 acceleration
+uint8 speed_acquisition
+uint8 heading_acquisition
+uint8 acceleration_acquisition
+uint8 shift_position
+int16 steering_angle

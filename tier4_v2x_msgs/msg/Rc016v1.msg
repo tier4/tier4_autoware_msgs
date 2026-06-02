@@ -1,0 +1,5 @@
+builtin_interfaces/Time stamp
+ParseFailReason parse_fail_reason
+Rc016v1CommonHeader header
+Rc016v1CommonManagementInfo management_info
+Rc016v1TargetInfo[] targets

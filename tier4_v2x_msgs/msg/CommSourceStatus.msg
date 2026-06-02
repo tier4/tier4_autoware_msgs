@@ -1,0 +1,10 @@
+string source
+builtin_interfaces/Time published_stamp
+
+builtin_interfaces/Time received_stamp
+tier4_v2x_msgs/ResultCode receive_result_code
+string receive_error_msg
+
+builtin_interfaces/Time parsed_stamp
+tier4_v2x_msgs/ResultCode parse_result_code
+string parse_error_msg

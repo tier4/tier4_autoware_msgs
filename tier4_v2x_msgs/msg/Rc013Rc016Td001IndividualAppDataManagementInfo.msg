@@ -1,0 +1,3 @@
+uint8 indiv_serv_std_id
+uint8 indiv_app_data_offset
+uint8 indiv_app_data_len

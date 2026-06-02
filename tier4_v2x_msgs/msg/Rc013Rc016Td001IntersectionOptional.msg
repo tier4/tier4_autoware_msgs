@@ -1,0 +1,5 @@
+uint8 intersect_dist_avail
+uint16 intersect_dist
+uint8 intersect_pos_avail
+int32 intersect_lat
+int32 intersect_lon
