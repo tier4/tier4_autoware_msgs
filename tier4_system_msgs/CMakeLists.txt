@@ -53,13 +53,15 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/OperateMrm.srv"
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
+  "srv/ChangeMrmRequest.srv"
+  "srv/ChangeTrajectorySource.srv"
+  "srv/ChangeCommandFilter.srv"
+  "srv/ChangeCommandSource.srv"
+  "srv/SelectCommandSource.srv"
   "srv/ChangeTopicRelayControl.srv"
   "srv/ResetDiagGraph.srv"
   "srv/ResetRedundancySwitcher.srv"
-  "srv/ChangeTrajectorySource.srv"
-  "srv/ChangeCommandSource.srv"
-  "srv/SelectCommandSource.srv"
-  "srv/ChangeCommandFilter.srv"
+  "srv/SetDiagGraphOverride.srv"
   DEPENDENCIES
     autoware_common_msgs
     builtin_interfaces
