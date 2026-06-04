@@ -1,0 +1,12 @@
+uint16 year
+uint8 month
+uint8 day
+uint8 summer_time_designation
+uint8 holiday_designation
+uint8 day_of_week
+uint8 reserve3
+uint8 hour
+uint8 minute
+uint8 second
+uint8 time_100ms
+uint8 reserve8

@@ -1,0 +1,13 @@
+builtin_interfaces/Time stamp
+ParseFailReason parse_fail_reason
+Rc018CommonHeader common_header
+Rc018RadioManagementNumber radio_management_number
+uint8 operation_classification_code
+uint8 message_id
+uint8 increment_counter
+Rc018TransmissionTime transmission_time
+uint16 message_size
+uint8 reserve8_1
+uint8 reserve8_2
+Rc018SignalInfo signal_info
+Rc018IntersectionIdentificationInfo intersection_identification_info

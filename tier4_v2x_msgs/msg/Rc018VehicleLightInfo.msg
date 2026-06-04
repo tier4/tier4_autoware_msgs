@@ -1,0 +1,3 @@
+uint8 vehicle_light_id
+uint8 light_color_output_change_count
+Rc018VehicleLightDeviceInfo[] light_device_infos

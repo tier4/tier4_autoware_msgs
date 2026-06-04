@@ -1,0 +1,3 @@
+Rc018ProvisionPointManagementNumber provision_point_management_number
+uint8 connected_route_count
+Rc018LaneIdentificationInfo[] lane_identification_infos

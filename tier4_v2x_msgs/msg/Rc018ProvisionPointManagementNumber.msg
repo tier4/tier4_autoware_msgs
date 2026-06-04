@@ -1,0 +1,3 @@
+uint8 prefecture_code
+uint8 provision_point_type_code
+uint16 intersection_id

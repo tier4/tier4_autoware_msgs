@@ -1,0 +1,6 @@
+uint8 route_id
+uint8 signal_traffic_direction_info_presence_flag
+uint8 reserve7
+uint8 signal_traffic_direction_info
+uint16[] vehicle_light_info_pointers
+uint16[] pedestrian_light_info_pointers

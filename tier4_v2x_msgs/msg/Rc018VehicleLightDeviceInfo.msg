@@ -1,0 +1,5 @@
+uint8 round_signal_light_color_display
+uint8 blue_arrow_signal_display_direction
+uint8 countdown_stop_flag
+uint16 minimum_remaining_seconds
+uint16 maximum_remaining_seconds

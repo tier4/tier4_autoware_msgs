@@ -1,0 +1,3 @@
+uint8 message_type_code
+uint8 message_version
+uint8 reserved1

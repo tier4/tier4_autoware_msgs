@@ -1,0 +1,10 @@
+Rc018ProvisionPointManagementNumber provision_point_management_number
+uint8 reserve8
+uint8 system_status_byte
+uint8 event_counter
+uint8 vehicle_light_count
+uint8 pedestrian_light_count
+uint8 connected_route_count
+uint8 service_route_count
+Rc018ServiceRouteSignalInfo[] service_route_signal_infos
+Rc018VehicleLightInfo[] vehicle_light_infos
