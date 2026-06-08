@@ -7,6 +7,7 @@ uint8 BICYCLE=4
 uint8 MOTORBIKE=5
 uint8 PEDESTRIAN=6
 uint8 ANIMAL=7
+uint8 HAZARD=8
 
 # Classification type (use constants above)
 uint32 type
