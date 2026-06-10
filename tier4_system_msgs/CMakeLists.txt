@@ -43,8 +43,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CommandModeStatus.msg"
   "msg/CommandModeStatusItem.msg"
   "srv/OperateMrm.srv"
-  "srv/ChangeOperationMode.srv"
-  "srv/ChangeAutowareControl.srv"
   "srv/ChangeTopicRelayControl.srv"
   "srv/ResetDiagGraph.srv"
   "srv/SelectCommandSource.srv"
