@@ -49,6 +49,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DrivingModeFlagItem.msg"
   "msg/DrivingModeMrmState.msg"
   "msg/DrivingModeMrmStateItem.msg"
+  "msg/DrivingModeInfo.msg"
+  "msg/DrivingModeInfoItem.msg"
   "srv/OperateMrm.srv"
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
