@@ -1,5 +1,4 @@
 # Trajectory source identifier. (required)
 uint32 source
 ---
-bool success
-string message
+autoware_common_msgs/ResponseStatus status
