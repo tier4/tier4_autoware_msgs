@@ -1,4 +1,3 @@
-
 # Filter status. True means enabled, false means disabled. (required)
 bool filter
 ---
