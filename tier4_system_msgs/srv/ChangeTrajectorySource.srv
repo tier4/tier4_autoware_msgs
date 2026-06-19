@@ -1,3 +1,4 @@
+# Trajectory source identifier. (required)
 uint32 source
 ---
 bool success
