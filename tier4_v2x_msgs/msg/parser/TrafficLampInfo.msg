@@ -1,0 +1,3 @@
+uint8 lamp_id
+uint8 lamp_phase_count
+autoware_perception_msgs/TrafficLightGroup lamp_phase_info

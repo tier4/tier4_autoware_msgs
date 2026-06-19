@@ -64,9 +64,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/parser/Rc018VehicleLightDeviceInfo.msg"
   "msg/parser/Rc018VehicleLightInfo.msg"
   "msg/parser/Spat.msg"
+  "msg/parser/TrafficLampInfo.msg"
+  "msg/parser/TrafficLightInfo.msg"
   DEPENDENCIES
+    autoware_perception_msgs
     builtin_interfaces
     std_msgs
+    unique_identifier_msgs
 )
 
 if(BUILD_TESTING)
