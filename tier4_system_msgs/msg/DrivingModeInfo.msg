@@ -2,4 +2,4 @@
 builtin_interfaces/Time stamp
 
 # Items with arbitrary lengths for each driving mode. (required)
-tier4_system_msgs/DrivingModeFlagItem[] items
+tier4_system_msgs/DrivingModeInfoItem[] items
