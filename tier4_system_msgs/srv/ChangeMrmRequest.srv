@@ -1,0 +1,13 @@
+# Constant for strategy
+uint16 UNKNOWN = 0
+uint16 CANCEL = 1    # Cancel the MRM request.
+uint16 DELEGATE = 2  # Delegate the selection of MRM behavior to Autoware.
+uint16 BEHAVIOR = 3  # Activate the specified MRM behavior if possible.
+
+# Selection policy for the MRM behavior to be executed.
+uint16 strategy
+
+# Preferred MRM behavior. Used when the strategy field is BEHAVIOR. (optional)
+uint16 behavior
+---
+autoware_common_msgs/ResponseStatus status
