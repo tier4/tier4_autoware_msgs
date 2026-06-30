@@ -26,7 +26,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/DecisionFactorObject.msg
   msg/DecisionFactorPointCloud.msg
   msg/DoorStatus.msg
-  msg/ElectionStatus.msg
   msg/Emergency.msg
   msg/EngageStatus.msg
   msg/FailSafeState.msg
@@ -83,7 +82,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/InitializePose.srv
   srv/InitializePoseAuto.srv
   srv/PauseDriving.srv
-  srv/ResetRedundancySwitcher.srv
+  srv/ResetMrm.srv
   srv/SetDoor.srv
   srv/SetObserver.srv
   srv/SetOperator.srv

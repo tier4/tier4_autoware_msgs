@@ -15,6 +15,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/ActiveControlUnit.msg"
   "msg/AutowareState.msg"
   "msg/DiagGraphStruct.msg"
   "msg/DiagGraphStatus.msg"
@@ -35,19 +36,33 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ServiceLog.msg"
   "msg/ModeChangeAvailable.msg"
   "msg/MrmBehaviorStatus.msg"
+  "msg/TrajectorySourceStatus.msg"
   "msg/CommandSourceStatus.msg"
+  "msg/CommandFilterStatus.msg"
   "msg/CommandModeAvailability.msg"
   "msg/CommandModeAvailabilityItem.msg"
   "msg/CommandModeRequest.msg"
   "msg/CommandModeRequestItem.msg"
   "msg/CommandModeStatus.msg"
   "msg/CommandModeStatusItem.msg"
+  "msg/DrivingModeRequest.msg"
+  "msg/DrivingModeFlag.msg"
+  "msg/DrivingModeFlagItem.msg"
+  "msg/DrivingModeMrmState.msg"
+  "msg/DrivingModeMrmStateItem.msg"
+  "msg/DrivingModeInfo.msg"
+  "msg/DrivingModeInfoItem.msg"
   "srv/OperateMrm.srv"
   "srv/ChangeOperationMode.srv"
   "srv/ChangeAutowareControl.srv"
+  "srv/ChangeMrmRequest.srv"
+  "srv/ChangeTrajectorySource.srv"
+  "srv/ChangeCommandFilter.srv"
+  "srv/ChangeCommandSource.srv"
+  "srv/SelectCommandSource.srv"
   "srv/ChangeTopicRelayControl.srv"
   "srv/ResetDiagGraph.srv"
-  "srv/SelectCommandSource.srv"
+  "srv/ResetRedundancySwitcher.srv"
   DEPENDENCIES
     autoware_common_msgs
     builtin_interfaces
