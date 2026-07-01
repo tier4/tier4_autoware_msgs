@@ -1,0 +1,2 @@
+uint8 diverging_route_count
+Rc019DivergingRouteAttributeInfo[] diverging_route_attribute_infos

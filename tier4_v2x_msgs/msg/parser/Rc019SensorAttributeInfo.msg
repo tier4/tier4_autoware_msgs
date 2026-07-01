@@ -1,0 +1,9 @@
+uint8 attribute_info_area_size
+uint8 sensor_id
+uint8 sensor_type
+uint16 sensor_identification_info
+Rc019Position sensor_position
+uint8 sensor_operation_status
+uint8 sensor_working_status
+uint8 sensor_detection_range_count
+Rc019SensorDetectionRangeInfo[] detection_range_infos

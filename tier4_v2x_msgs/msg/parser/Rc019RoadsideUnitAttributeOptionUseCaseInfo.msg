@@ -1,0 +1,2 @@
+uint16 option_size
+Rc019RouteUseCaseInfo[] route_use_case_infos

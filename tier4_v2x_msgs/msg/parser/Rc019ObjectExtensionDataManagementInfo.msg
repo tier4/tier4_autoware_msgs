@@ -1,0 +1,3 @@
+uint8 individual_service_standard_id
+uint8 extension_data_start_address
+uint8 extension_data_length

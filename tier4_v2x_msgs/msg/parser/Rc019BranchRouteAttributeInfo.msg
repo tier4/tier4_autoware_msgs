@@ -1,0 +1,2 @@
+uint8 inflow_outflow_classification_code
+uint8 branch_connection_direction

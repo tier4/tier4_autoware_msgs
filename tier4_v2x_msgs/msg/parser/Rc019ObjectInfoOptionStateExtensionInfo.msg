@@ -1,0 +1,4 @@
+int16 yaw_rate
+uint8 lights_status
+uint16 yaw_rate_accuracy
+uint8 lights_status_accuracy

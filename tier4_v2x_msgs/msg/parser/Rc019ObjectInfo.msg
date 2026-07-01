@@ -1,0 +1,12 @@
+Rc019ObjectManagementInfo management_info
+Rc019ExistenceTime existence_time
+Rc019ObjectState state
+Rc019ObjectSize size
+Rc019ObjectTypeInfo type_info
+Rc019ObjectInfoOptionDetectionHistoryInfo[<=1] detection_history_info
+Rc019ObjectInfoOptionAccuracyInfo[<=1] object_accuracy_info
+Rc019ObjectInfoOptionStateExtensionInfo[<=1] object_state_extension_info
+Rc019ObjectInfoOptionStateTransferInfo[<=1] object_state_transfer_info
+Rc019ObjectInfoOptionV2xGnssInfo[<=1] v2x_gnss_info
+Rc019ObjectInfoOptionUsageTypeInfo[<=1] usage_type_info
+Rc019ObjectInfoOptionExtensionInfo[<=1] object_extension_info

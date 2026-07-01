@@ -1,0 +1,6 @@
+uint16 option_size
+uint8 service_point_type_code
+uint32 service_point_id
+Rc019Position representative_point_position
+uint8 connected_route_count
+Rc019RouteIdentificationInfo[] route_identification_infos

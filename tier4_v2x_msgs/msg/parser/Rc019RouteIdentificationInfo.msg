@@ -1,0 +1,5 @@
+uint8 route_id
+uint8 route_connection_direction
+uint8 inflow_outflow_classification_code
+uint16 inflow_route_info_pointer
+uint16 outflow_route_info_pointer

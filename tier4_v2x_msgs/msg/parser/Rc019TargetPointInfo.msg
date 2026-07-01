@@ -1,0 +1,2 @@
+uint8 target_point_node_id
+Rc019TargetPointNodeCoordinate target_point_node_coordinate

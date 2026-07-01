@@ -1,0 +1,3 @@
+uint8 extension_header_length
+uint8 extension_data_count
+Rc019ObjectExtensionDataInfo[] extension_data_infos

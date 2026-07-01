@@ -1,0 +1,7 @@
+uint8 target_use_case_supplement_code
+uint8 target_use_case_type
+uint8 service_target_vehicle
+uint8 reserve4
+uint16 object_information_target_route
+uint16 object_information_target_sensor_id
+uint16 use_case_distance_info_pointer

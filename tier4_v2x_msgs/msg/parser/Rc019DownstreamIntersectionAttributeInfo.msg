@@ -1,0 +1,3 @@
+uint8 service_point_type_code
+uint32 service_point_id
+Rc019InflowRouteInfo inflow_route_info

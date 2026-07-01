@@ -1,0 +1,2 @@
+uint8 use_case_distance_info_count
+Rc019UseCaseDistanceInfo[] use_case_distance_infos

@@ -1,0 +1,3 @@
+uint8 diverging_connection_direction
+uint8 route_node_count
+Rc019NodeAttributeInfo[] node_attribute_infos

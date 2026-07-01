@@ -1,0 +1,2 @@
+uint8 branch_route_count
+Rc019BranchRouteAttributeInfo[] branch_route_attribute_infos

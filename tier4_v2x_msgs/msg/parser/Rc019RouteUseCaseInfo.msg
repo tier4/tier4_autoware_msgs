@@ -1,0 +1,2 @@
+uint8 use_case_count
+Rc019UseCaseTypeInfo[] use_case_type_infos

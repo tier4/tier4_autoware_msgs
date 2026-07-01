@@ -1,0 +1,4 @@
+uint32 object_id
+uint8 tracking_status
+uint8 data_length
+uint8 object_option_flag

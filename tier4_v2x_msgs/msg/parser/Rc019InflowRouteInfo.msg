@@ -1,0 +1,8 @@
+uint8 route_node_count
+uint8 branch_node_count
+uint8 diverging_node_count
+uint8 merging_node_count
+Rc019NodeAttributeInfo[] node_attribute_infos
+Rc019BranchInfo[] branch_infos
+Rc019DivergingInfo[] diverging_infos
+Rc019MergingInfo[] merging_infos

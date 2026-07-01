@@ -1,0 +1,4 @@
+builtin_interfaces/Time stamp
+ParseFailReason parse_fail_reason
+Rc019RoadsideHeader header
+Rc019ObjectInformation object_information

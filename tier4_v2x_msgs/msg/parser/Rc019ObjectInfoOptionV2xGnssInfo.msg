@@ -1,0 +1,9 @@
+uint16 position_error_ellipse_rotation_angle
+uint8 position_error_ellipse_major_radius
+uint8 position_error_ellipse_minor_radius
+uint8 gnss_positioning_mode
+uint8 gnss_position_accuracy_degradation_rate
+uint8 gnss_satellite_count
+uint8 gnss_multipath_detection
+uint8 dead_reckoning_function_info
+uint8 map_matching_function_info

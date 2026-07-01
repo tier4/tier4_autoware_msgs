@@ -1,0 +1,7 @@
+uint8 node_id
+uint8 node_type_code
+Rc019Position node_coordinate
+uint8 node_link_heading
+uint8 lane_count
+uint16 branch_diverge_merge_info_pointer
+uint16 node_attribute_extension_info_pointer

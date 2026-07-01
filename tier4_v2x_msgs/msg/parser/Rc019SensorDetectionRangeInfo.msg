@@ -1,0 +1,4 @@
+uint8 detection_range_id
+uint8 undetected_rate
+uint8 vertex_count
+Rc019VertexPosition[] vertex_positions

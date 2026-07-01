@@ -1,0 +1,2 @@
+Rc019ObjectExtensionDataManagementInfo management_info
+uint8[] data

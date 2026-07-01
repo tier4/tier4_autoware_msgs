@@ -1,0 +1,4 @@
+uint16 option_size
+Rc019InflowRouteInfo[] inflow_route_infos
+Rc019OutflowRouteInfo[] outflow_route_infos
+Rc019RouteUseCaseDistanceInfo route_use_case_distance_info

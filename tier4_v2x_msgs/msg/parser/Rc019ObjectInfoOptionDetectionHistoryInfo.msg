@@ -1,0 +1,6 @@
+uint16 detection_count
+uint8 continuous_undetected_count
+uint16 stationary_state
+uint16 existence_duration
+uint16 latest_information_source
+uint8 false_detection_rate

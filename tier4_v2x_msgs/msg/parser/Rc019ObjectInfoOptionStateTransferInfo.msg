@@ -1,0 +1,13 @@
+uint8 brake_status
+uint8 auxiliary_brake_status
+uint8 accelerator_pedal_opening
+uint8 shift_position
+int16 steering_angle
+uint8 acc_operation_status
+uint8 c_acc_operation_status
+uint8 pcs_operation_status
+uint8 abs_operation_status
+uint8 trc_operation_status
+uint8 esc_operation_status
+uint8 lka_operation_status
+uint8 ldw_operation_status

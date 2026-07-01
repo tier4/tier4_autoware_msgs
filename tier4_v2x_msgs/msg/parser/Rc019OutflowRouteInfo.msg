@@ -1,0 +1,2 @@
+uint8 downstream_intersection_count
+Rc019DownstreamIntersectionAttributeInfo[] downstream_intersection_attribute_infos

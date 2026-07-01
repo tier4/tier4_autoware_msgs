@@ -1,0 +1,3 @@
+uint8 use_case_distance_type_code
+Rc019TargetPointInfo target_point_info
+uint16 route_distance

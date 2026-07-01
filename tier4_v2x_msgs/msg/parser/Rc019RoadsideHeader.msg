@@ -1,0 +1,9 @@
+uint8 service_standard_id
+uint8 message_version
+uint8 operation_classification_code
+uint8 increment_counter
+uint16 message_id
+uint32 roadside_unit_id
+Rc019TransmissionTime transmission_time
+uint16 message_size
+uint16 reserve16

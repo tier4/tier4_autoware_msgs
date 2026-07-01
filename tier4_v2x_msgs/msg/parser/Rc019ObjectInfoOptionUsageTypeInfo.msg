@@ -1,0 +1,9 @@
+uint8 usage_type
+uint8 reserve4
+uint8 private_vehicle_extension_info
+uint8 emergency_vehicle_extension_info
+uint8 road_maintenance_vehicle_extension_info
+uint8 passenger_transport_vehicle_extension_info
+uint8 freight_transport_vehicle_extension_info
+uint8 special_vehicle_extension_info
+uint8 other_extension_info

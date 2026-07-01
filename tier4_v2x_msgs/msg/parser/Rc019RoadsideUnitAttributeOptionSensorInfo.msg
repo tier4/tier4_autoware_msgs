@@ -1,0 +1,4 @@
+uint16 option_size
+uint8 supported_sensor_count
+uint8 reserve4
+Rc019SensorAttributeInfo[] sensor_attribute_infos

@@ -1,0 +1,7 @@
+uint8 service_operation_status
+uint8 roadside_unit_option_flag
+Rc019RoadsideUnitAttributeOptionServicePointInfo[<=1] service_point_info
+Rc019RoadsideUnitAttributeOptionUseCaseInfo[<=1] use_case_info
+Rc019RoadsideUnitAttributeOptionSensorInfo[<=1] sensor_info
+Rc019RoadsideUnitAttributeOptionServicePointUseCaseExtensionInfo[<=1] service_point_use_case_extension_info
+Rc019RoadsideUnitAttributeOptionExtensionInfo[<=1] roadside_unit_attribute_extension_info

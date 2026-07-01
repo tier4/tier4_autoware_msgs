@@ -1,0 +1,10 @@
+uint16 position_error_ellipse_rotation_angle
+uint16 position_error_ellipse_major_radius
+uint16 position_error_ellipse_minor_radius
+uint16 speed_error
+uint16 heading_error
+uint16 acceleration_error
+uint16 object_width_error
+uint16 object_length_error
+uint16 object_height_error
+uint8 reserve2

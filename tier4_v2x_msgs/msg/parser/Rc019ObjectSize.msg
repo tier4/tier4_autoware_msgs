@@ -1,0 +1,6 @@
+uint8 orientation_recognition_status
+uint8 reference_point
+uint16 object_heading
+uint16 width
+uint16 length
+uint16 height
