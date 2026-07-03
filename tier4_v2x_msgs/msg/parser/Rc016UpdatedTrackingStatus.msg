@@ -1,0 +1,5 @@
+uint8 existence_confidence
+uint8 tracking_status
+uint16 matching_count
+uint16 lifetime
+uint8 fusion_origin

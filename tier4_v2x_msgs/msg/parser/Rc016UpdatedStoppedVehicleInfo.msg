@@ -1,0 +1,2 @@
+uint16 stopped_state
+uint16 existence_time

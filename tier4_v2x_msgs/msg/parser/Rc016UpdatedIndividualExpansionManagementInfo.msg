@@ -1,0 +1,2 @@
+uint8 individual_expansion_area_header_length
+uint8 individual_expansion_data_count

@@ -1,0 +1,3 @@
+uint8 sensor_related_info_size
+uint8 sensor_count
+Rc016UpdatedSensorAttributeInfo[] sensor_attribute_info

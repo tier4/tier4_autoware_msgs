@@ -1,0 +1,4 @@
+uint8 sensor_attribute_info_size
+uint32 sensor_id
+uint8 sensor_management_state
+uint16 sensor_operation_state
