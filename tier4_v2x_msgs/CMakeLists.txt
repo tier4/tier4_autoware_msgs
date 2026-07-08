@@ -73,6 +73,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/parser/Rc018TransmissionTime.msg"
   "msg/parser/Rc018VehicleLightDeviceInfo.msg"
   "msg/parser/Rc018VehicleLightInfo.msg"
+  "msg/parser/Rc019.msg"
   "msg/parser/Rc019BranchInfo.msg"
   "msg/parser/Rc019BranchRouteAttributeInfo.msg"
   "msg/parser/Rc019DivergingInfo.msg"
