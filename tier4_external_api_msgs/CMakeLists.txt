@@ -46,6 +46,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MapHash.msg
   msg/MetadataPackages.msg
   msg/MemoryStatus.msg
+  msg/MonitoringHeartbeat.msg
+  msg/MonitoringOperatorStatus.msg
+  msg/MonitoringStatus.msg
   msg/NetworkInterfaceStatus.msg
   msg/NetworkStatus.msg
   msg/Observer.msg
@@ -74,6 +77,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/VehicleStatus.msg
   msg/VehicleStatusStamped.msg
   msg/VelocityLimit.msg
+  srv/ChangeMonitoringMode.srv
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
   srv/Engage.srv
