@@ -47,7 +47,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MetadataPackages.msg
   msg/MemoryStatus.msg
   msg/MonitoringHeartbeat.msg
-  msg/MonitoringOperatorStatus.msg
+  msg/MonitoringMode.msg
   msg/MonitoringStatus.msg
   msg/NetworkInterfaceStatus.msg
   msg/NetworkStatus.msg
