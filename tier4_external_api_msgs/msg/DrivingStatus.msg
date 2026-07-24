@@ -1,4 +1,4 @@
-# Constatns for mode. This is also used in EnableDriving service.
+# Constants for mode. This is also used in EnableDriving service.
 uint8 UNKNOWN = 0
 uint8 STOP = 1
 uint8 LEVEL2 = 2
