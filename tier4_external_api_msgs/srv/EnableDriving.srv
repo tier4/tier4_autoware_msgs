@@ -1,4 +1,5 @@
-# Request mode. Use constants in DrivingStatus. (required)
+# Request mode. Use constants in DrivingStatus message. (required)
 uint8 mode
 ---
+# Response status. (required)
 tier4_external_api_msgs/ResponseStatus status

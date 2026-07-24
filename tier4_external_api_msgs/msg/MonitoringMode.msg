@@ -1,5 +1,0 @@
-uint8 UNKNOWN = 0
-uint8 TIMEOUT = 1
-uint8 UNAVAILABLE = 2
-uint8 AVAILABLE = 3
-uint8 OPERATING = 4
