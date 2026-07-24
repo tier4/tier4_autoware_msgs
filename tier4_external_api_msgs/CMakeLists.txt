@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/DecisionFactorObject.msg
   msg/DecisionFactorPointCloud.msg
   msg/DoorStatus.msg
+  msg/DrivingStatus.msg
   msg/ElectionStatus.msg
   msg/Emergency.msg
   msg/EngageStatus.msg
@@ -80,6 +81,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/ChangeMonitoringMode.srv
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
+  srv/EnableDriving.srv
   srv/Engage.srv
   srv/GetMetadataPackages.srv
   srv/GetRosbagCopyList.srv
