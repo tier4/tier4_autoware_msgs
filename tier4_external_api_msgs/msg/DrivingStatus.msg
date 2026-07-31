@@ -15,3 +15,9 @@ bool is_level2_available
 
 # Available flag for level 4 autonomous driving. (required)
 bool is_level4_available
+
+# Permission for Level 2 driving on this route. (required)
+bool is_level2_route
+
+# Permission for Level 4 driving on this route. (required)
+bool is_level4_route
