@@ -1,0 +1,4 @@
+# Command source identifier. (required)
+uint32 source
+---
+autoware_common_msgs/ResponseStatus status
