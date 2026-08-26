@@ -1,0 +1,4 @@
+# Filter status. True means enabled, false means disabled. (required)
+bool filter
+---
+autoware_common_msgs/ResponseStatus status
