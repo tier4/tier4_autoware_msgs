@@ -123,6 +123,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/parser/Spat.msg"
   "msg/parser/TrafficLampInfo.msg"
   "msg/parser/TrafficLightInfo.msg"
+  "msg/BusStopSignageInfoArray.msg"
+  "msg/BusStopStatus.msg"
+  "msg/BusStopState.msg"
   DEPENDENCIES
     autoware_perception_msgs
     builtin_interfaces
