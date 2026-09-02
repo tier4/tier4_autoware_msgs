@@ -17,18 +17,6 @@ ament_auto_find_build_dependencies()
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MultiArrayDimension.msg"
   "msg/MultiArrayLayout.msg"
-  "msg/BoolStamped.msg"
-  "msg/Float32Stamped.msg"
-  "msg/Float32MultiArrayStamped.msg"
-  "msg/Float64Stamped.msg"
-  "msg/Float64MultiArrayStamped.msg"
-  "msg/Int32Stamped.msg"
-  "msg/Int32MultiArrayStamped.msg"
-  "msg/Int64Stamped.msg"
-  "msg/Int64MultiArrayStamped.msg"
-  "msg/StringStamped.msg"
-  "msg/ProcessingTimeNode.msg"
-  "msg/ProcessingTimeTree.msg"
   "msg/SystemUsage.msg"
   "msg/SystemUsageArray.msg"
   DEPENDENCIES
