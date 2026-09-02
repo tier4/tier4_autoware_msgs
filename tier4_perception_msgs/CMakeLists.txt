@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 project(tier4_perception_msgs)
 
+include(${CMAKE_BINARY_DIR}/../../generators/conan_toolchain.cmake)
+include_directories(${CMAKE_INCLUDE_PATH})
+
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
   set(CMAKE_CXX_STANDARD_REQUIRED ON)
