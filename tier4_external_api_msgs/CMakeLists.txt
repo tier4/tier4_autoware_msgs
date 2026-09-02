@@ -53,6 +53,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/PlanningFactor.msg
   msg/PlanningFactorArray.msg
   msg/PlanningFactorControlPoint.msg
+  msg/ProximityHazardObject.msg
+  msg/ProximityHazardObjects.msg
   msg/RosbagCopyStatus.msg
   msg/RosbagLoggingMode.msg
   msg/RosbagRecordStatus.msg
@@ -101,6 +103,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES
     builtin_interfaces
     autoware_common_msgs
+    autoware_perception_msgs
     diagnostic_msgs
     geometry_msgs
     unique_identifier_msgs
