@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/DecisionFactorObject.msg
   msg/DecisionFactorPointCloud.msg
   msg/DoorStatus.msg
+  msg/DrivingStatus.msg
   msg/ElectionStatus.msg
   msg/Emergency.msg
   msg/EngageStatus.msg
@@ -46,6 +47,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MapHash.msg
   msg/MetadataPackages.msg
   msg/MemoryStatus.msg
+  msg/MonitoringHeartbeat.msg
+  msg/MonitoringStatus.msg
   msg/NetworkInterfaceStatus.msg
   msg/NetworkStatus.msg
   msg/Observer.msg
@@ -74,8 +77,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/VehicleStatus.msg
   msg/VehicleStatusStamped.msg
   msg/VelocityLimit.msg
+  srv/ChangeMonitoringStatus.srv
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
+  srv/EnableDriving.srv
   srv/Engage.srv
   srv/GetMetadataPackages.srv
   srv/GetRosbagCopyList.srv
