@@ -1,2 +1,5 @@
-string code       # Error code (e.g. LOC-00-E00-001E)
-bool is_resolved  # Whether the error is caused solely by the latch.
+# Error code. For example, LOC-00-E00-001E. (required)
+string code
+
+# Whether the error is caused solely by the latch. (required)
+bool is_resolved
