@@ -1,4 +1,4 @@
-# true: ON, false: OFF. Global overhead light.
+# true: ON, false: OFF.
 bool enabled
 ---
 tier4_external_api_msgs/ResponseStatus status
