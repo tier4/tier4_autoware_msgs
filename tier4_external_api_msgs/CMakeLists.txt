@@ -15,6 +15,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/AirConditionStatus.msg
   msg/CalibrationStatus.msg
   msg/CalibrationStatusArray.msg
   msg/ClassifiedDiagnostics.msg
@@ -92,6 +93,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/PauseDriving.srv
   srv/ResetRedundancySwitcher.srv
   srv/ResetMrm.srv
+  srv/SetAirCondition.srv
   srv/SetDoor.srv
   srv/SetObserver.srv
   srv/SetOperator.srv
