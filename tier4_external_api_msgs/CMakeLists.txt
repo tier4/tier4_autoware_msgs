@@ -44,7 +44,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/HddDeviceStatus.msg
   msg/HddPartitionStatus.msg
   msg/HddStatus.msg
-  msg/InteriorLightStatus.msg
   msg/LocalizationScore.msg
   msg/LocalizationScoreArray.msg
   msg/MapHash.msg
@@ -69,6 +68,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/RouteSection.msg
   msg/Service.msg
   msg/Steering.msg
+  msg/SwitchStatus.msg
   msg/SystemMonitor.msg
   msg/TextFile.msg
   msg/TrafficLightElement.msg
@@ -97,7 +97,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetObserver.srv
   srv/SetOperator.srv
   srv/SetEmergency.srv
-  srv/SetInteriorLight.srv
   srv/SetPose.srv
   srv/SetPreferredLane.srv
   srv/SetRosbagLoggingMode.srv
@@ -105,6 +104,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetRosbagRollback.srv
   srv/SetRoute.srv
   srv/SetService.srv
+  srv/SetSwitch.srv
   srv/SetVelocityLimit.srv
   srv/StartRosbagCopy.srv
   DEPENDENCIES
