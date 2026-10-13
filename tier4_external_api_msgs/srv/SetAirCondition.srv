@@ -2,7 +2,7 @@
 bool enabled
 
 
-# `TEMPERATURE_LO`: Max Cool、`TEMPERATURE_HI`: Max Hot
+# TEMPERATURE_LO: Max Cool, TEMPERATURE_HI: Max Hot
 # Do not use the `temperature` field for above two settings.
 uint8 TEMPERATURE_LO=0
 uint8 TEMPERATURE_HI=1
