@@ -64,6 +64,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/RouteSection.msg
   msg/Service.msg
   msg/Steering.msg
+  msg/SwitchStatus.msg
   msg/SystemMonitor.msg
   msg/TextFile.msg
   msg/TrafficLightElement.msg
@@ -97,6 +98,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetRosbagRollback.srv
   srv/SetRoute.srv
   srv/SetService.srv
+  srv/SetSwitch.srv
   srv/SetVelocityLimit.srv
   srv/StartRosbagCopy.srv
   DEPENDENCIES
