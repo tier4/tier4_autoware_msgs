@@ -15,6 +15,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/ActiveControlUnit.msg"
   "msg/AutowareState.msg"
   "msg/DiagGraphStruct.msg"
   "msg/DiagGraphStatus.msg"
@@ -32,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/EmergencyStateStamped.msg"
   "msg/HazardStatus.msg"
   "msg/HazardStatusStamped.msg"
+  "msg/InLaneStopTrigger.msg"
   "msg/ServiceLog.msg"
   "msg/ModeChangeAvailable.msg"
   "msg/MrmBehaviorStatus.msg"
@@ -61,6 +63,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SelectCommandSource.srv"
   "srv/ChangeTopicRelayControl.srv"
   "srv/ResetDiagGraph.srv"
+  "srv/ResetRedundancySwitcher.srv"
   "srv/SetDiagGraphOverride.srv"
   DEPENDENCIES
     autoware_common_msgs
