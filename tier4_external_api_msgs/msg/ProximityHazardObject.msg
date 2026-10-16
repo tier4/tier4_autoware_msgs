@@ -1,0 +1,3 @@
+bool has_object false
+float32 distance_m 0.0
+autoware_perception_msgs/PredictedObject predicted_object
