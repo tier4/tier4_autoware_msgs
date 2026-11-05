@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   require-label:
-    uses: autowarefoundation/autoware-github-actions/.github/workflows/require-label.yaml@v1
+    uses: autowarefoundation/autoware-github-actions/.github/workflows/require-label.yaml@v1.69.1
     with:
       label: run:build-and-test-differential
 
@@ -45,7 +45,7 @@ jobs:
         run: echo "PR_FETCH_DEPTH=$(( ${{ github.event.pull_request.commits }} + 1 ))" >> "${GITHUB_ENV}"
 
       - name: Checkout PR branch and all PR commits
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.4.0
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: ${{ env.PR_FETCH_DEPTH }}
@@ -54,15 +54,15 @@ jobs:
         run: df -h
 
       - name: Remove exec_depend
-        uses: autowarefoundation/autoware-github-actions/remove-exec-depend@v1
+        uses: autowarefoundation/autoware-github-actions/remove-exec-depend@v1.69.1
 
       - name: Get modified packages
         id: get-modified-packages
-        uses: autowarefoundation/autoware-github-actions/get-modified-packages@v1
+        uses: autowarefoundation/autoware-github-actions/get-modified-packages@v1.69.1
 
       - name: Build
         if: ${{ steps.get-modified-packages.outputs.modified-packages != '' }}
-        uses: autowarefoundation/autoware-github-actions/colcon-build@v1
+        uses: autowarefoundation/autoware-github-actions/colcon-build@v1.69.1
         with:
           rosdistro: ${{ matrix.rosdistro }}
           target-packages: ${{ steps.get-modified-packages.outputs.modified-packages }}
@@ -71,7 +71,7 @@ jobs:
       - name: Test
         id: test
         if: ${{ steps.get-modified-packages.outputs.modified-packages != '' }}
-        uses: autowarefoundation/autoware-github-actions/colcon-test@v1
+        uses: autowarefoundation/autoware-github-actions/colcon-test@v1.69.1
         with:
           rosdistro: ${{ matrix.rosdistro }}
           target-packages: ${{ steps.get-modified-packages.outputs.modified-packages }}
@@ -79,7 +79,7 @@ jobs:
 
       - name: Upload coverage to CodeCov
         if: ${{ steps.test.outputs.coverage-report-files != '' }}
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v5.5.5
         with:
           files: ${{ steps.test.outputs.coverage-report-files }}
           fail_ci_if_error: false
