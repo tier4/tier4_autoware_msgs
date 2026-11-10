@@ -3,8 +3,9 @@
 # Evaluation time, frame_id = base_link
 std_msgs/Header header
 
-# Origin of the sector bearings, the center of the ego footprint in base_link
+# Origin of the sector angles, the center of the ego footprint expressed in base_link
 geometry_msgs/Point origin
 
 # Alert per sector
+# A direction not covered by any sector, or an empty array, means that the direction is not evaluated, not that it is safe
 HazardSector[] sectors
