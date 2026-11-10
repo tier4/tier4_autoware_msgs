@@ -8,9 +8,9 @@ uint8 HIGH = 3  # prompt the driver to override to avoid the hazard
 
 # constants for sources, a bit mask
 # Bits set with risk_level = NONE mean that the condition of the source is detected but not judged to be an imminent risk
-uint8 SOURCE_PROXIMITY = 1
-uint8 SOURCE_COLLISION = 2
-uint8 SOURCE_BOUNDARY_DEPARTURE = 4
+uint8 SOURCE_PROXIMITY = 1          # bit 0 (1 << 0)
+uint8 SOURCE_COLLISION = 2          # bit 1 (1 << 1)
+uint8 SOURCE_BOUNDARY_DEPARTURE = 4 # bit 2 (1 << 2)
 
 # Angular range of this sector seen from origin [rad], in the base_link orientation, counterclockwise positive
 # The sector spans counterclockwise from start_angle to end_angle
