@@ -15,6 +15,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/AirConditionStatus.msg
   msg/CalibrationStatus.msg
   msg/CalibrationStatusArray.msg
   msg/ClassifiedDiagnostics.msg
@@ -65,6 +66,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/RouteSection.msg
   msg/Service.msg
   msg/Steering.msg
+  msg/SwitchStatus.msg
   msg/SystemMonitor.msg
   msg/TextFile.msg
   msg/TrafficLightElement.msg
@@ -86,6 +88,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/InitializePoseAuto.srv
   srv/PauseDriving.srv
   srv/ResetRedundancySwitcher.srv
+  srv/SetAirCondition.srv
   srv/SetDoor.srv
   srv/SetObserver.srv
   srv/SetOperator.srv
@@ -97,6 +100,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/SetRosbagRollback.srv
   srv/SetRoute.srv
   srv/SetService.srv
+  srv/SetSwitch.srv
   srv/SetVelocityLimit.srv
   srv/StartRosbagCopy.srv
   DEPENDENCIES

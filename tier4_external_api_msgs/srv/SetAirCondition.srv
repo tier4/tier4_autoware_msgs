@@ -1,0 +1,17 @@
+# true: ON, false: OFF.
+bool enabled
+
+
+# TEMPERATURE_LO: Max Cool, TEMPERATURE_HI: Max Hot
+# Do not use the temperature field for above two settings.
+uint8 TEMPERATURE_LO=0
+uint8 TEMPERATURE_HI=1
+uint8 TEMPERATURE_CELSIUS=2
+uint8 TEMPERATURE_FAHRENHEIT=3
+uint8 temperature_mode
+
+# TEMPERATURE_CELSIUS: 18.0 to 32.0 in 0.5 degree increments
+# TEMPERATURE_FAHRENHEIT: 60 to 85 in integer 
+float32 temperature
+---
+tier4_external_api_msgs/ResponseStatus status

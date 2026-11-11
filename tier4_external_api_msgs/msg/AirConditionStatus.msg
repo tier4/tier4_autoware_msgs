@@ -1,0 +1,13 @@
+builtin_interfaces/Time stamp
+
+# true: ON, false: OFF.
+bool enabled
+
+uint8 TEMPERATURE_LO=0
+uint8 TEMPERATURE_HI=1
+uint8 TEMPERATURE_CELSIUS=2
+uint8 TEMPERATURE_FAHRENHEIT=3
+uint8 TEMPERATURE_UNKNOWN=255
+uint8 temperature_mode
+
+float32 temperature
