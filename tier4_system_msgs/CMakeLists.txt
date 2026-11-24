@@ -54,8 +54,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DrivingModeInfo.msg"
   "msg/DrivingModeInfoItem.msg"
   "srv/OperateMrm.srv"
-  "srv/ChangeOperationMode.srv"
-  "srv/ChangeAutowareControl.srv"
   "srv/ChangeMrmRequest.srv"
   "srv/ChangeTrajectorySource.srv"
   "srv/ChangeCommandFilter.srv"
