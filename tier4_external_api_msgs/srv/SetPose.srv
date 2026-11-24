@@ -1,4 +1,0 @@
-# Target pose to set
-geometry_msgs/PoseStamped pose
----
-tier4_external_api_msgs/ResponseStatus status

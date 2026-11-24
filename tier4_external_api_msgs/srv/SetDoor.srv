@@ -1,5 +1,0 @@
-# Door command
-# true: open door, false: close door
-bool open
----
-tier4_external_api_msgs/ResponseStatus status
