@@ -18,8 +18,6 @@
 #include "autoware_perception_msgs/msg/tracked_objects.hpp"
 #include "autoware_planning_msgs/msg/path.hpp"
 #include "autoware_planning_msgs/msg/trajectory.hpp"
-#include "autoware_planning_msgs/msg/path.hpp"
-#include "autoware_planning_msgs/msg/trajectory.hpp"
 #include "autoware_system_msgs/msg/autoware_state.hpp"
 #include "autoware_system_msgs/msg/hazard_status_stamped.hpp"
 #include "autoware_vehicle_msgs/msg/control_mode_report.hpp"

@@ -1,0 +1,5 @@
+# Request status. Use constants in MonitoringStatus message. (required)
+uint8 status
+---
+# Response status. (required)
+tier4_external_api_msgs/ResponseStatus status

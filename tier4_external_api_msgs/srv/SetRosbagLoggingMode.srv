@@ -1,3 +1,5 @@
+# Rosbag logging mode
+# true: operation mode (logs essential topics only), false: debug mode (logs all topics)
 bool is_operation_mode
 ---
 tier4_external_api_msgs/ResponseStatus status

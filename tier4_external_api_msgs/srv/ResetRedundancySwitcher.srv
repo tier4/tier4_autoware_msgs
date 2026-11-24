@@ -1,2 +1,3 @@
+# Reset the redundancy switcher to its initial state
 ---
 tier4_external_api_msgs/ResponseStatus status

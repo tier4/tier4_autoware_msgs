@@ -1,4 +1,8 @@
-# See the autoware_command_mode_types package for the source value.
+# Message sending time. (required)
 builtin_interfaces/Time stamp
-uint16 source
+
+# Command source identifier. (required)
+uint32 source
+
+# Deprecated. Use CommandFilterStatus instead.
 bool transition

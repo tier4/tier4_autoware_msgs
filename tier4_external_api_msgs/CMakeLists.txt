@@ -15,28 +15,45 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/AirConditionStatus.msg
   msg/CalibrationStatus.msg
   msg/CalibrationStatusArray.msg
   msg/ClassifiedDiagnostics.msg
   msg/ControlCommand.msg
   msg/ControlCommandStamped.msg
   msg/CpuStatus.msg
+  msg/CpuTemperature.msg
   msg/CpuUsage.msg
   msg/DecisionFactorObject.msg
   msg/DecisionFactorPointCloud.msg
   msg/DoorStatus.msg
+  msg/DrivingStatus.msg
   msg/ElectionStatus.msg
   msg/Emergency.msg
   msg/EngageStatus.msg
   msg/FailSafeState.msg
   msg/FailSafeStateStamped.msg
+  msg/FailureNotification.msg
+  msg/FailureNotificationArray.msg
   msg/GearShift.msg
   msg/GearShiftStamped.msg
+  msg/GpuStatus.msg
+  msg/GpuUnitStatus.msg
+  msg/HazardStatus.msg
+  msg/HazardStatusStamped.msg
   msg/Heartbeat.msg
+  msg/HddDeviceStatus.msg
+  msg/HddPartitionStatus.msg
+  msg/HddStatus.msg
   msg/LocalizationScore.msg
   msg/LocalizationScoreArray.msg
   msg/MapHash.msg
   msg/MetadataPackages.msg
+  msg/MemoryStatus.msg
+  msg/MonitoringHeartbeat.msg
+  msg/MonitoringStatus.msg
+  msg/NetworkInterfaceStatus.msg
+  msg/NetworkStatus.msg
   msg/Observer.msg
   msg/Operator.msg
   msg/PlanningFactor.msg
@@ -52,6 +69,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/RouteSection.msg
   msg/Service.msg
   msg/Steering.msg
+  msg/SwitchStatus.msg
+  msg/SystemMonitor.msg
   msg/TextFile.msg
   msg/TrafficLightElement.msg
   msg/TrafficLightGroup.msg
@@ -61,8 +80,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/VehicleCommandStamped.msg
   msg/VehicleStatus.msg
   msg/VehicleStatusStamped.msg
+  msg/VelocityLimit.msg
+  srv/ChangeMonitoringStatus.srv
   srv/GetAccelBrakeMapCalibrationData.srv
   srv/ClearRoute.srv
+  srv/EnableDriving.srv
   srv/Engage.srv
   srv/GetMetadataPackages.srv
   srv/GetRosbagCopyList.srv
@@ -71,20 +93,25 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/InitializePoseAuto.srv
   srv/PauseDriving.srv
   srv/ResetRedundancySwitcher.srv
+  srv/ResetMrm.srv
+  srv/SetAirCondition.srv
   srv/SetDoor.srv
   srv/SetObserver.srv
   srv/SetOperator.srv
   srv/SetEmergency.srv
   srv/SetPose.srv
+  srv/SetPreferredLane.srv
   srv/SetRosbagLoggingMode.srv
   srv/SetRosbagRecord.srv
   srv/SetRosbagRollback.srv
   srv/SetRoute.srv
   srv/SetService.srv
+  srv/SetSwitch.srv
   srv/SetVelocityLimit.srv
   srv/StartRosbagCopy.srv
   DEPENDENCIES
     builtin_interfaces
+    autoware_common_msgs
     diagnostic_msgs
     geometry_msgs
     unique_identifier_msgs

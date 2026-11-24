@@ -21,6 +21,7 @@ string EXTERNAL_LANE_CHANGE=ExternalLaneChange
 string LANE_CHANGE=LaneChange
 string GOAL_PLANNER=GoalPlanner
 string START_PLANNER=StartPlanner
+string ROUNDABOUT=Roundabout
 string reason
 
 tier4_planning_msgs/StopFactor[] stop_factors

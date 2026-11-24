@@ -1,4 +1,8 @@
+# Stop state
+# true: request vehicle to stop, false: cancel stop request
 bool stop
+
+# Identifier of the module or component requesting the stop
 string request_source
 ---
 autoware_common_msgs/ResponseStatus status

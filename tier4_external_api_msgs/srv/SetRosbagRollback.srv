@@ -1,3 +1,5 @@
+# Rollback command
+# true: perform rollback to discard recent recording, false: no action
 bool rollback
 ---
 tier4_external_api_msgs/ResponseStatus status

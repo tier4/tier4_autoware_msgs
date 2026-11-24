@@ -1,0 +1,47 @@
+# Options for shift_mode
+uint8 EXPLICIT_LATERAL_OFFSET_AMOUNT = 1
+uint8 LATERAL_OFFSET_DIRECTION = 2
+
+# Options for shift_direction_value (used when shift_mode = LATERAL_OFFSET_DIRECTION)
+uint8 RESET = 0
+uint8 LEFT = 1
+uint8 RIGHT = 2
+
+uint8 shift_mode
+
+# When shift_mode = EXPLICIT_LATERAL_OFFSET_AMOUNT:
+# Target lateral offset [m], same convention as LateralOffset.msg topic
+# positive -> left of the reference path, negative -> right of the reference path
+float32 shift_value
+
+# When shift_mode = LATERAL_OFFSET_DIRECTION
+uint8 shift_direction_value
+---
+# Constants for response_code
+
+# No result has been assigned yet.
+uint16 UNKNOWN = 0
+# The request was accepted and the lateral offset was updated.
+uint16 SUCCESS = 1
+# An unspecified error occurred.
+uint16 ERROR_UNKNOWN = 10000
+# The shift_mode value is not supported.
+uint16 ERROR_INVALID_MODE = 10001
+# The shift_direction_value is invalid for LATERAL_OFFSET_DIRECTION mode.
+uint16 ERROR_INVALID_DIRECTION = 10002
+# The lateral offset is ALREADY at the limit, and cannot be shifted further.
+uint16 ERROR_EXCEEDED_LIMIT = 10003
+# The requested change is too small to perform a meaningful shift.
+uint16 ERROR_SHIFT_GAP_TOO_SMALL = 10004
+# Other active modules in the behavior path planner conflict with this operation.
+uint16 ERROR_MODULES_CONFLICTING = 10005
+# An unspecified warning occurred.
+uint16 WARN_UNKNOWN = 20000
+# The requested shift exceeded the limit and was clamped to the maximum allowed offset.
+uint16 WARN_EXCEEDED_LIMIT = 20001
+
+# response_code uses the constants above, and may also use autoware_common_msgs/msg/ResponseStatus.code
+# values with the same numeric definitions; this service uses SERVICE_UNREADY and PARAMETER_ERROR in that way.
+uint16 response_code
+
+autoware_common_msgs/ResponseStatus status
