@@ -18,18 +18,18 @@ jobs:
     steps:
       - name: Generate token
         id: generate-token
-        uses: tibdex/github-app-token@v2
+        uses: tibdex/github-app-token@v2.1.0
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.4.0
         with:
           ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Run pre-commit
-        uses: autowarefoundation/autoware-github-actions/pre-commit@v1
+        uses: autowarefoundation/autoware-github-actions/pre-commit@v1.69.1
         with:
           pre-commit-config: .pre-commit-config.yaml
           token: ${{ steps.generate-token.outputs.token }}

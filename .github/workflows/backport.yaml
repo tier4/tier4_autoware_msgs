@@ -26,12 +26,12 @@ jobs:
     steps:
       - name: Generate token
         id: generate-token
-        uses: tibdex/github-app-token@v2
+        uses: tibdex/github-app-token@v2.1.0
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
 
-      - uses: tibdex/backport@v2
+      - uses: tibdex/backport@v2.0.4
         id: backport
         with:
           github_token: ${{ steps.generate-token.outputs.token }}

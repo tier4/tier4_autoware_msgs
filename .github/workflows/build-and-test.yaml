@@ -34,7 +34,7 @@ jobs:
             build-depends-repos: build_depends.repos
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.4.0
         with:
           fetch-depth: 1
 
@@ -42,15 +42,15 @@ jobs:
         run: df -h
 
       - name: Remove exec_depend
-        uses: autowarefoundation/autoware-github-actions/remove-exec-depend@v1
+        uses: autowarefoundation/autoware-github-actions/remove-exec-depend@v1.69.1
 
       - name: Get self packages
         id: get-self-packages
-        uses: autowarefoundation/autoware-github-actions/get-self-packages@v1
+        uses: autowarefoundation/autoware-github-actions/get-self-packages@v1.69.1
 
       - name: Build
         if: ${{ steps.get-self-packages.outputs.self-packages != '' }}
-        uses: autowarefoundation/autoware-github-actions/colcon-build@v1
+        uses: autowarefoundation/autoware-github-actions/colcon-build@v1.69.1
         with:
           rosdistro: ${{ matrix.rosdistro }}
           target-packages: ${{ steps.get-self-packages.outputs.self-packages }}
@@ -59,7 +59,7 @@ jobs:
       - name: Test
         if: ${{ steps.get-self-packages.outputs.self-packages != '' }}
         id: test
-        uses: autowarefoundation/autoware-github-actions/colcon-test@v1
+        uses: autowarefoundation/autoware-github-actions/colcon-test@v1.69.1
         with:
           rosdistro: ${{ matrix.rosdistro }}
           target-packages: ${{ steps.get-self-packages.outputs.self-packages }}
@@ -67,7 +67,7 @@ jobs:
 
       - name: Upload coverage to CodeCov
         if: ${{ steps.test.outputs.coverage-report-files != '' }}
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v5.5.5
         with:
           files: ${{ steps.test.outputs.coverage-report-files }}
           fail_ci_if_error: false
