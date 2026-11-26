@@ -55,6 +55,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetLaneletRoute.srv"
   "srv/SetLateralOffset.srv"
   "srv/SetWaypointRoute.srv"
+  "srv/SaveWaypoint.srv"
   DEPENDENCIES
     autoware_common_msgs
     autoware_planning_msgs
